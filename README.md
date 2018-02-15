@@ -1,6 +1,6 @@
 # Brother Games
 
-Repositorio que va a contener lo relacionado con Angular
+Repositorio que va a contener lo relacionado la parte de spring
 
 ## COSW - Construcción de Software
 ## Descripción
