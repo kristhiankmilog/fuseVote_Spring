@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse\">\r\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\r\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n  <a class=\"navbar-brand\" href=\"#\">BrotherGames</a>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">Home</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/users\" routerLink=\"/users\">Profile</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/tasks\" routerLink=\"/tasks\">Games</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/edit\" routerLink=\"/edit\">Games Exchange</a>\r\n      </li>\r\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\r\n        <a href=\"#\" class=\"nav-link\" (click)=\"signOut()\">(Sign Out)</a>\r\n      </li>\r\n    </ul>\r\n        <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\r\n          <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">Sign in<span class=\"sr-only\">(current)</span></a>\r\n        </li>\r\n        <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\r\n          <a class=\"nav-link\"  routerLinkActive=\"/editUsers\" routerLink=\"/editUsers\">Sign up<span class=\"sr-only\">(current)</span></a>\r\n        </li>\r\n        <li *ngIf=\"isLoggedIn()\" class=\"nav-item active\">\r\n          <a class=\"nav-link\"  routerLinkActive=\"/editUsers\" routerLink=\"/editUsers\">Profile<span class=\"sr-only\">(current)</span></a>\r\n        </li>\r\n    <form class=\"form-inline my-2 my-lg-0\">\r\n      <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\" aria-label=\"Search\">\r\n      <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\r\n    </form>\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n</div>"
+module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse\">\r\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\r\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n  <a class=\"navbar-brand\" href=\"#\">BrotherGames</a>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">Home</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/users\" routerLink=\"/users\">Profile</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/tasks\" routerLink=\"/tasks\">Games</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/edit\" routerLink=\"/edit\">Games Exchange</a>\r\n      </li>\r\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\r\n        <a href=\"#\" class=\"nav-link\" (click)=\"signOut()\">(Sign Out)</a>\r\n      </li>\r\n    </ul>\r\n        <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\r\n          <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">SIGN IN<span class=\"sr-only\">(current)</span></a>\r\n        </li>\r\n        <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\r\n          <a class=\"nav-link\"  routerLinkActive=\"/register\" routerLink=\"/register\">REGISTER<span class=\"sr-only\">(current)</span></a>\r\n        </li>\r\n        <li *ngIf=\"isLoggedIn()\" class=\"nav-item active\">\r\n          <a class=\"nav-link\"  routerLinkActive=\"/editUsers\" routerLink=\"/editUsers\">Profile<span class=\"sr-only\">(current)</span></a>\r\n        </li>\r\n    <form class=\"form-inline my-2 my-lg-0\">\r\n      <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\" aria-label=\"Search\">\r\n      <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\r\n    </form>\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n</div>"
 
 /***/ }),
 
@@ -110,10 +110,11 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_todo_service__ = __webpack_require__("../../../../../src/app/services/todo.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_sign_in_sing_in_page_component__ = __webpack_require__("../../../../../src/app/pages/sign-in/sing-in-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_sign_in_sign_in_page_component__ = __webpack_require__("../../../../../src/app/pages/sign-in/sign-in-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__common_auth_service__ = __webpack_require__("../../../../../src/app/common/auth.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__common_app_data_service__ = __webpack_require__("../../../../../src/app/common/app-data.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_register_page_register_page_component__ = __webpack_require__("../../../../../src/app/pages/register-page/register-page.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -140,8 +141,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var ROUTES = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_16__pages_sign_in_sing_in_page_component__["a" /* SingInPageComponent */] },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_16__pages_sign_in_sign_in_page_component__["a" /* SignInPageComponent */] },
+    { path: 'register', component: __WEBPACK_IMPORTED_MODULE_20__pages_register_page_register_page_component__["a" /* RegisterComponent */] },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_7__pages_home_page_home_page_component__["a" /* HomePageComponent */] },
     {
         path: 'users', component: __WEBPACK_IMPORTED_MODULE_12__pages_user_list_page_user_list_page_component__["a" /* UserListPageComponent */],
@@ -176,9 +179,10 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_8__pages_task_list_page_task_list_page_component__["a" /* TaskListPageComponent */],
             __WEBPACK_IMPORTED_MODULE_9__pages_task_edit_page_task_edit_page_component__["a" /* TaskEditPageComponent */],
             __WEBPACK_IMPORTED_MODULE_10__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__pages_sign_in_sing_in_page_component__["a" /* SingInPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__pages_sign_in_sign_in_page_component__["a" /* SignInPageComponent */],
             __WEBPACK_IMPORTED_MODULE_11__pages_user_edit_page_user_edit_page_component__["a" /* UserEditPageComponent */],
             __WEBPACK_IMPORTED_MODULE_12__pages_user_list_page_user_list_page_component__["a" /* UserListPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_20__pages_register_page_register_page_component__["a" /* RegisterComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -592,7 +596,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/page-not-found/page-not-found.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  The page you were looking for was not found\n</p>\n<p>\n  <a routerLink=\"/\">Back to Home</a>\n</p>"
+module.exports = "<p>\r\n  The page you were looking for was not found\r\n</p>\r\n<p>\r\n  <a routerLink=\"/\">Back to Home</a>\r\n</p>"
 
 /***/ }),
 
@@ -632,7 +636,7 @@ PageNotFoundComponent = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/pages/sign-in/sing-in-page.component.css":
+/***/ "../../../../../src/app/pages/register-page/register-page.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -650,18 +654,18 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ "../../../../../src/app/pages/sign-in/sing-in-page.component.html":
+/***/ "../../../../../src/app/pages/register-page/register-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <h2>Sign In</h2>\r\n  <form [formGroup]=\"signInForm\" (ngSubmit)=\"doLogin()\" novalidate>\r\n    <div class=\"form-group\">\r\n      <label for=\"description\">Username</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"username\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"priority\">Password</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"alterEgo\" formControlName=\"password\" required>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!signInForm.valid\">Sign In</button>\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"loginError\">{{loginError}}</p>\r\n\r\n  </form>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <h2>Register</h2>\r\n    <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"description\">Username</label>\r\n            <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"username\" required>\r\n        </div>\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"priority\">Email</label>\r\n            <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\r\n        </div>\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"priority\">Password</label>\r\n            <input type=\"password\" class=\"form-control\" id=\"password\" formControlName=\"password\" required>\r\n        </div>\r\n\r\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!registerForm.valid\">Register</button>\r\n\r\n        <!--<p class=\"text-danger mt-1\" *ngIf=\"loginError\">{{loginError}}</p>-->\r\n\r\n    </form>\r\n</div>"
 
 /***/ }),
 
-/***/ "../../../../../src/app/pages/sign-in/sing-in-page.component.ts":
+/***/ "../../../../../src/app/pages/register-page/register-page.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SingInPageComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
@@ -679,19 +683,104 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var SingInPageComponent = (function () {
-    function SingInPageComponent(usersService, formBuilder, router) {
+var RegisterComponent = (function () {
+    function RegisterComponent(todoUser, formBuilder, router) {
+        this.todoUser = todoUser;
+        this.formBuilder = formBuilder;
+        this.router = router;
+    }
+    RegisterComponent.prototype.ngOnInit = function () {
+        this.registerForm = this.formBuilder.group({
+            username: '',
+            email: '',
+            password: '',
+        });
+    };
+    RegisterComponent.prototype.onSubmit = function () {
+        var _this = this;
+        this.todoUser.create(this.registerForm.get('username').value, this.registerForm.get('email').value, this.registerForm.get('password').value).subscribe(function (serverResponse) {
+            _this.router.navigate(['/users']);
+        }, function (error) {
+            console.log(error);
+        });
+        this.router.navigate(['/users']);
+    };
+    return RegisterComponent;
+}());
+RegisterComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-register-page',
+        template: __webpack_require__("../../../../../src/app/pages/register-page/register-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/register-page/register-page.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _c || Object])
+], RegisterComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=register-page.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/sign-in/sign-in-page.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/sign-in/sign-in-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n  <h2>Sign In</h2>\r\n  <form [formGroup]=\"signInForm\" (ngSubmit)=\"doLogin()\" novalidate>\r\n    <div class=\"form-group\">\r\n      <label for=\"description\">Username</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"username\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"priority\">Password</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"alterEgo\" formControlName=\"password\" required>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!signInForm.valid\">Sign In</button>\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"loginError\">{{loginError}}</p>\r\n\r\n  </form>\r\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/sign-in/sign-in-page.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignInPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var SignInPageComponent = (function () {
+    function SignInPageComponent(usersService, formBuilder, router) {
         this.usersService = usersService;
         this.formBuilder = formBuilder;
         this.router = router;
     }
-    SingInPageComponent.prototype.ngOnInit = function () {
+    SignInPageComponent.prototype.ngOnInit = function () {
         this.signInForm = this.formBuilder.group({
             username: '',
             password: '',
         });
     };
-    SingInPageComponent.prototype.doLogin = function () {
+    SignInPageComponent.prototype.doLogin = function () {
         var _this = this;
         this.usersService.login(this.signInForm.get('username').value, this.signInForm.get('password').value).subscribe(function (loginResponse) {
             _this.router.navigate(['tasks']);
@@ -699,19 +788,19 @@ var SingInPageComponent = (function () {
             _this.loginError = 'Error Signing in: ' + (error && error.message ? error.message : '');
         });
     };
-    return SingInPageComponent;
+    return SignInPageComponent;
 }());
-SingInPageComponent = __decorate([
+SignInPageComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: 'app-sing-in-page',
-        template: __webpack_require__("../../../../../src/app/pages/sign-in/sing-in-page.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/pages/sign-in/sing-in-page.component.css")]
+        selector: 'app-sign-in-page',
+        template: __webpack_require__("../../../../../src/app/pages/sign-in/sign-in-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/sign-in/sign-in-page.component.css")]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _c || Object])
-], SingInPageComponent);
+], SignInPageComponent);
 
 var _a, _b, _c;
-//# sourceMappingURL=sing-in-page.component.js.map
+//# sourceMappingURL=sign-in-page.component.js.map
 
 /***/ }),
 
@@ -736,7 +825,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/task-edit-page/task-edit-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h2>Edit Task</h2>\n  <form [formGroup]=\"todoForm\" (ngSubmit)=\"onSubmit()\" novalidate>\n    <div class=\"form-group\">\n      <label for=\"description\">Description</label>\n      <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"description\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"priority\">Priority</label>\n      <input type=\"number\" class=\"form-control\" id=\"alterEgo\" formControlName=\"priority\">\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"completed\">Completed</label>\n      <input type=\"checkbox\" class=\"form-control\" id=\"completed\" formControlName=\"completed\">\n    </div>\n\n    <button type=\"submit\" class=\"btn btn-success\">Save</button>\n\n  </form>\n</div>"
+module.exports = "<div class=\"container\">\r\n  <h2>Edit Task</h2>\r\n  <form [formGroup]=\"todoForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n    <div class=\"form-group\">\r\n      <label for=\"description\">Description</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"description\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"priority\">Priority</label>\r\n      <input type=\"number\" class=\"form-control\" id=\"alterEgo\" formControlName=\"priority\">\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"completed\">Completed</label>\r\n      <input type=\"checkbox\" class=\"form-control\" id=\"completed\" formControlName=\"completed\">\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\">Save</button>\r\n\r\n  </form>\r\n</div>"
 
 /***/ }),
 
@@ -821,7 +910,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/task-list-page/task-list-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Tasks</h2>\n<table class=\"table table-bordered\">\n <thead>\n   <tr>\n     <th>Description</th>\n     <th>Priority</th>\n     <th>Completed</th>\n   </tr>\n </thead>\n <tr *ngFor=\"let todo of todos\">\n   <td>{{todo.description}}</td>\n   <td>{{todo.priority}}</td>\n   <td>{{todo.completed}}</td>\n </tr>\n</table>\n"
+module.exports = "<h2>Tasks</h2>\r\n<table class=\"table table-bordered\">\r\n <thead>\r\n   <tr>\r\n     <th>Description</th>\r\n     <th>Priority</th>\r\n     <th>Completed</th>\r\n   </tr>\r\n </thead>\r\n <tr *ngFor=\"let todo of todos\">\r\n   <td>{{todo.description}}</td>\r\n   <td>{{todo.priority}}</td>\r\n   <td>{{todo.completed}}</td>\r\n </tr>\r\n</table>\r\n"
 
 /***/ }),
 
