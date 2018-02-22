@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse\">\r\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\r\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n  <a class=\"navbar-brand\" href=\"#\">BrotherGames</a>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">Home</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/users\" routerLink=\"/users\">Profile</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/tasks\" routerLink=\"/tasks\">Games</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/edit\" routerLink=\"/edit\">Games Exchange</a>\r\n      </li>\r\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\r\n        <a href=\"#\" class=\"nav-link\" (click)=\"signOut()\">(Sign Out)</a>\r\n      </li>\r\n    </ul>\r\n        <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\r\n          <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">SIGN IN<span class=\"sr-only\">(current)</span></a>\r\n        </li>\r\n        <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\r\n          <a class=\"nav-link\"  routerLinkActive=\"/register\" routerLink=\"/register\">REGISTER<span class=\"sr-only\">(current)</span></a>\r\n        </li>\r\n        <li *ngIf=\"isLoggedIn()\" class=\"nav-item active\">\r\n          <a class=\"nav-link\"  routerLinkActive=\"/editUsers\" routerLink=\"/editUsers\">Profile<span class=\"sr-only\">(current)</span></a>\r\n        </li>\r\n    <form class=\"form-inline my-2 my-lg-0\">\r\n      <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\" aria-label=\"Search\">\r\n      <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\r\n    </form>\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n</div>"
+module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse\">\r\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\r\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n  <a class=\"navbar-brand\" href=\"#\">BrotherGames</a>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">Home</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/users\" routerLink=\"/users\">Profile</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/tasks\" routerLink=\"/tasks\">Games</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/edit\" routerLink=\"/edit\">Games Exchange</a>\r\n      </li>\r\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\r\n        <a href=\"#\" class=\"nav-link\" (click)=\"signOut()\">(Sign Out)</a>\r\n      </li>\r\n      </ul>\r\n\r\n      <form class=\"form-inline my-2 my-lg-0\">\r\n        <ul class=\"navbar-nav mr-auto\">\r\n\r\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\r\n            <a class=\"nav-link\"  routerLinkActive=\"/register\" routerLink=\"/register\">REGISTER<span class=\"sr-only\">(current)</span></a>\r\n          </li>\r\n\r\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\r\n            <a class=\"nav-link\" routerLinkActive=\"/signin\" routerLink=\"/signin\">SIGN IN<span class=\"sr-only\">(current)</span></a>\r\n          </li>\r\n\r\n          <li *ngIf=\"isLoggedIn()\" class=\"nav-item active\">\r\n            <a class=\"nav-link\"  routerLinkActive=\"/editUsers\" routerLink=\"/editUsers\">Profile<span class=\"sr-only\">(current)</span></a>\r\n          </li>\r\n        </ul>\r\n    </form>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n</div>"
 
 /***/ }),
 
@@ -143,7 +143,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var ROUTES = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_16__pages_sign_in_sign_in_page_component__["a" /* SignInPageComponent */] },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_7__pages_home_page_home_page_component__["a" /* HomePageComponent */] },
+    { path: 'signin', component: __WEBPACK_IMPORTED_MODULE_16__pages_sign_in_sign_in_page_component__["a" /* SignInPageComponent */] },
     { path: 'register', component: __WEBPACK_IMPORTED_MODULE_20__pages_register_page_register_page_component__["a" /* RegisterComponent */] },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_7__pages_home_page_home_page_component__["a" /* HomePageComponent */] },
     {
@@ -522,7 +523,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "\r\nh2 {\r\n    font-size: 24px;\r\n    text-transform: uppercase;\r\n    color: #303030;\r\n    font-weight: 600;\r\n    margin-bottom: 30px;\r\n}\r\nh4 {\r\n    font-size: 19px;\r\n    line-height: 1.375em;\r\n    color: #303030;\r\n    font-weight: 400;\r\n    margin-bottom: 30px;\r\n}\r\n.jumbotron {\r\n    background-color: #3399ff;\r\n    color: #fff;\r\n    padding: 100px 25px;\r\n    font-family: Montserrat, sans-serif;\r\n}\r\n\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -535,7 +536,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/home-page/home-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  BrotherGames\r\n</p>"
+module.exports = "\r\n<head>\r\n    <link href=\"https://fonts.googleapis.com/css?family=Montserrat\" rel=\"stylesheet\" type=\"text/css\">\r\n    <link href=\"https://fonts.googleapis.com/css?family=Lato\" rel=\"stylesheet\" type=\"text/css\">\r\n    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\r\n    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\r\n</head>\r\n\r\n\r\n<div class=\"jumbotron text-center\">\r\n    <h1>Brother Games</h1>\r\n    <p>Search Game</p>\r\n    <form>\r\n        <div class=\"input-group\">\r\n            <input type=\"text\" class=\"form-control\" size=\"50\" placeholder=\"Search Game\" required>\r\n            <div class=\"input-group-btn\">\r\n                <button type=\"button\" class=\"btn btn-info\">Search</button>\r\n            </div>\r\n        </div>\r\n    </form>\r\n</div>\r\n\r\n<div id=\"about\" class=\"container-fluid\">\r\n    <div class=\"row\">\r\n        <div class=\"col-sm-8\">\r\n            <h2>About Brother Games </h2><br>\r\n            <h4>On this page you can search, consult and exchange the video games you want, in addition to consulting the prices of each of them in the different internet gaming platforms.</h4>\r\n            <br>\r\n            <h4>To be able to exchange a game you must first register to be able to log in and make the exchange</h4>\r\n\r\n        </div>\r\n\r\n        <div id=\"centerbrand\">\r\n\r\n            <img id=\"brand\"  src=\"/assets/images/videojuegos.jpg\" width=\"300\" height=\"200\">\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -644,7 +645,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".container{\r\n    position: relative;\r\n    width: 400px;\r\n    -ms-flex-line-pack: center;\r\n        align-content: center;\r\n    background-color: transparent;\r\n}\r\n\r\n#centerbrand{\r\n    position: relative;\r\n    width: 400px;\r\n    height: 100px;\r\n}\r\n\r\n#brand{\r\n    position: absolute;\r\n    width: 200px;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    margin: auto;\r\n}\r\n\r\n.btn-success{\r\n    background-color: #1FE932;\r\n    border: none;\r\n    padding: 10px 145px;\r\n}", ""]);
 
 // exports
 
@@ -657,7 +658,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/register-page/register-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <h2>Register</h2>\r\n    <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"description\">Username</label>\r\n            <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"username\" required>\r\n        </div>\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"priority\">Email</label>\r\n            <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\r\n        </div>\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"priority\">Password</label>\r\n            <input type=\"password\" class=\"form-control\" id=\"password\" formControlName=\"password\" required>\r\n        </div>\r\n\r\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!registerForm.valid\">Register</button>\r\n\r\n        <!--<p class=\"text-danger mt-1\" *ngIf=\"loginError\">{{loginError}}</p>-->\r\n\r\n    </form>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <br>\r\n    <div id=\"centerbrand\">\r\n        <img id=\"brand\"  src=\"/assets/images/videojuegos.jpg\" width=\"170\" height=\"80\">\r\n    </div>\r\n    <h2 class=\"text-center\">REGISTER TO BROTHERS GAMES</h2>\r\n    <br>\r\n    <br>\r\n\r\n    <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"description\">Username</label>\r\n            <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"username\" required>\r\n        </div>\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"priority\">Email</label>\r\n            <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\r\n        </div>\r\n\r\n        <div class=\"form-group\">\r\n            <label for=\"priority\">Password</label>\r\n            <input type=\"password\" class=\"form-control\" id=\"password\" formControlName=\"password\" required>\r\n        </div>\r\n        <br>\r\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!registerForm.valid\">REGISTER</button>\r\n\r\n    </form>\r\n</div>\r\n\r\n\r\n"
 
 /***/ }),
 
@@ -729,7 +730,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".container{\r\n    position: relative;\r\n    width: 400px;\r\n    -ms-flex-line-pack: center;\r\n        align-content: center;\r\n    background-color: transparent;\r\n}\r\n\r\n#centerbrand{\r\n    position: relative;\r\n    width: 400px;\r\n    height: 100px;\r\n}\r\n\r\n#brand{\r\n    position: absolute;\r\n    width: 200px;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    margin: auto;\r\n}\r\n\r\n.btn-success{\r\n    background-color: #1FE932;\r\n    border: none;\r\n    padding: 10px 155px;\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -742,7 +743,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/sign-in/sign-in-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <h2>Sign In</h2>\r\n  <form [formGroup]=\"signInForm\" (ngSubmit)=\"doLogin()\" novalidate>\r\n    <div class=\"form-group\">\r\n      <label for=\"description\">Username</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"username\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"priority\">Password</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"alterEgo\" formControlName=\"password\" required>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!signInForm.valid\">Sign In</button>\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"loginError\">{{loginError}}</p>\r\n\r\n  </form>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n  <br>\r\n  <div id=\"centerbrand\">\r\n\r\n    <img id=\"brand\"  src=\"/assets/images/videojuegos.jpg\" width=\"170\" height=\"80\">\r\n  </div>\r\n\r\n  <h2 class=\"text-center\">SIGN IN BROTHERS GAMES</h2>\r\n  <br>\r\n  <br>\r\n  <form [formGroup]=\"signInForm\" (ngSubmit)=\"doLogin()\" novalidate>\r\n\r\n    <div class=\"form-group\">\r\n      <label  for=\"description\">Username</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"username\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"priority\">Password</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"alterEgo\" formControlName=\"password\" required>\r\n    </div>\r\n    <br>\r\n    <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!signInForm.valid\">SIGN IN</button>\r\n\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"loginError\">{{loginError}}</p>\r\n  </form>\r\n</div>"
 
 /***/ }),
 
