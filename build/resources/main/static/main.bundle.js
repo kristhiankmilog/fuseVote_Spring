@@ -766,7 +766,7 @@ var ChangeOkListPageComponent = (function () {
         this.changeService = changeService;
         this.router = router;
         this.changes = [
-            new __WEBPACK_IMPORTED_MODULE_2__models_change__["a" /* Change */](1, "", "", "https://ugc.kn3.net/i/origin/http://www.noticiasdot.com/publicaciones/galerias/Nintendo/2007/NDS_Donkey-Kong-Jungle-Climber-wallpaper/NDS_Donkey-Kong-Jungle-Climber-wallpaper-02.jpg", "", true),
+            new __WEBPACK_IMPORTED_MODULE_2__models_change__["a" /* Change */](1, "Donkey Kong", "Adventure", "https://ugc.kn3.net/i/origin/http://www.noticiasdot.com/publicaciones/galerias/Nintendo/2007/NDS_Donkey-Kong-Jungle-Climber-wallpaper/NDS_Donkey-Kong-Jungle-Climber-wallpaper-02.jpg", "", true),
         ];
     }
     ChangeOkListPageComponent.prototype.ngOnInit = function () {
@@ -911,10 +911,10 @@ var ExchangeListComponent = (function () {
     function ExchangeListComponent(router) {
         this.router = router;
         this.exchanges = [
-            new __WEBPACK_IMPORTED_MODULE_1__models_change__["a" /* Change */](1, "", "", "http://2.bp.blogspot.com/-uPDDofi3qOE/UM4VRppTwlI/AAAAAAAAAB0/nDW-TyihLQQ/s1600/Dead+Space+2+Caratula.jpg", "", true),
-            new __WEBPACK_IMPORTED_MODULE_1__models_change__["a" /* Change */](1, "", "", "http://2.bp.blogspot.com/-uPDDofi3qOE/UM4VRppTwlI/AAAAAAAAAB0/nDW-TyihLQQ/s1600/Dead+Space+2+Caratula.jpg", "", true),
-            new __WEBPACK_IMPORTED_MODULE_1__models_change__["a" /* Change */](1, "", "", "http://2.bp.blogspot.com/-uPDDofi3qOE/UM4VRppTwlI/AAAAAAAAAB0/nDW-TyihLQQ/s1600/Dead+Space+2+Caratula.jpg", "", true),
-            new __WEBPACK_IMPORTED_MODULE_1__models_change__["a" /* Change */](1, "", "", "http://2.bp.blogspot.com/-uPDDofi3qOE/UM4VRppTwlI/AAAAAAAAAB0/nDW-TyihLQQ/s1600/Dead+Space+2+Caratula.jpg", "", true),
+            new __WEBPACK_IMPORTED_MODULE_1__models_change__["a" /* Change */](1, "Dead Space", "Game Survival Terror", "http://2.bp.blogspot.com/-uPDDofi3qOE/UM4VRppTwlI/AAAAAAAAAB0/nDW-TyihLQQ/s1600/Dead+Space+2+Caratula.jpg", "", true),
+            new __WEBPACK_IMPORTED_MODULE_1__models_change__["a" /* Change */](2, "Bloodborne", "RPG Survival", "https://i11b.3djuegos.com/juegos/11033/project_beast/fotos/ficha/project_beast-2739557.jpg", "", true),
+            new __WEBPACK_IMPORTED_MODULE_1__models_change__["a" /* Change */](3, "Uncharted 4", "Adventure", "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/2943/2943094_sd.jpg;maxHeight=550;maxWidth=642", "", true),
+            new __WEBPACK_IMPORTED_MODULE_1__models_change__["a" /* Change */](4, "Mario Odyssey", "Adventure", "https://images-na.ssl-images-amazon.com/images/I/91-VfRp-i0L._SY679_.jpg", "", true),
         ];
     }
     ExchangeListComponent.prototype.ngOnInit = function () {
