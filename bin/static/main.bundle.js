@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse\">\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">Navbar</a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n  <a class=\"navbar-brand\" href=\"#\">COSW Angular4</a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">Home</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/tasks\" routerLink=\"/tasks\">Tasks</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/edit\" routerLink=\"/edit\">Edit</a>\n      </li>\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a href=\"#\" class=\"nav-link\" (click)=\"signOut()\">(Sign Out)</a>\n      </li>\n      <li class=\"nav-item active\">\n        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" href=\"#\">Link</a>\n      </li>\n      <li class=\"nav-item\"> \n        <a class=\"nav-link disabled\" href=\"#\">Disabled</a>\n      </li>\n\n    </ul>\n    <form class=\"form-inline my-2 my-lg-0\">\n      <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\" aria-label=\"Search\">\n      <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\n    </form>\n  </div>\n\n</nav>\n<div class=\"container\">\n  <router-outlet></router-outlet>\n</div>"
+module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse\">\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n  <a class=\"navbar-brand\" href=\"#\">BrotherGames</a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">Home</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/users\" routerLink=\"/users\">Profile</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/tasks\" routerLink=\"/tasks\">Games</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/listChanges\" routerLink=\"/listChanges\">Games Exchange</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/editChanges\" routerLink=\"/editChanges\">New Exchange</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/listexChanges\" routerLink=\"/listexChanges\">List Exchange</a>\n      </li>\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a href=\"#\" class=\"nav-link\" (click)=\"signOut()\">(Sign Out)</a>\n      </li>\n      </ul>\n\n      <form class=\"form-inline my-2 my-lg-0\">\n        <ul class=\"navbar-nav mr-auto\">\n\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\n            <a class=\"nav-link\"  routerLinkActive=\"/register\" routerLink=\"/register\">REGISTER<span class=\"sr-only\">(current)</span></a>\n          </li>\n\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\n            <a class=\"nav-link\" routerLinkActive=\"/signin\" routerLink=\"/signin\">SIGN IN<span class=\"sr-only\">(current)</span></a>\n          </li>\n\n          <li *ngIf=\"isLoggedIn()\" class=\"nav-item active\">\n            <a class=\"nav-link\"  routerLinkActive=\"/editUsers\" routerLink=\"/editUsers\">Profile<span class=\"sr-only\">(current)</span></a>\n          </li>\n        </ul>\n    </form>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n  <router-outlet></router-outlet>\n</div>"
 
 /***/ }),
 
@@ -104,14 +104,23 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_page_home_page_component__ = __webpack_require__("../../../../../src/app/pages/home-page/home-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_task_list_page_task_list_page_component__ = __webpack_require__("../../../../../src/app/pages/task-list-page/task-list-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_task_edit_page_task_edit_page_component__ = __webpack_require__("../../../../../src/app/pages/task-edit-page/task-edit-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_page_not_found_page_not_found_component__ = __webpack_require__("../../../../../src/app/pages/page-not-found/page-not-found.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_todo_service__ = __webpack_require__("../../../../../src/app/services/todo.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_sign_in_sing_in_page_component__ = __webpack_require__("../../../../../src/app/pages/sign-in/sing-in-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__common_auth_service__ = __webpack_require__("../../../../../src/app/common/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__common_app_data_service__ = __webpack_require__("../../../../../src/app/common/app-data.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_change_list_page_change_list_page_component__ = __webpack_require__("../../../../../src/app/pages/change-list-page/change-list-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_change_edit_page_change_edit_page_component__ = __webpack_require__("../../../../../src/app/pages/change-edit-page/change-edit-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_page_not_found_page_not_found_component__ = __webpack_require__("../../../../../src/app/pages/page-not-found/page-not-found.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_user_edit_page_user_edit_page_component__ = __webpack_require__("../../../../../src/app/pages/user-edit-page/user-edit-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_user_list_page_user_list_page_component__ = __webpack_require__("../../../../../src/app/pages/user-list-page/user-list-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_exchange_list_page_exchange_list_page_component__ = __webpack_require__("../../../../../src/app/pages/exchange-list-page/exchange-list-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_change_list_page_changeOk_list_page_component__ = __webpack_require__("../../../../../src/app/pages/change-list-page/changeOk-list-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_code_accept_page_code_accept_page_component__ = __webpack_require__("../../../../../src/app/pages/code-accept-page/code-accept-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_todo_service__ = __webpack_require__("../../../../../src/app/services/todo.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_sign_in_sign_in_page_component__ = __webpack_require__("../../../../../src/app/pages/sign-in/sign-in-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__common_auth_service__ = __webpack_require__("../../../../../src/app/common/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__common_app_data_service__ = __webpack_require__("../../../../../src/app/common/app-data.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_change_service__ = __webpack_require__("../../../../../src/app/services/change.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_register_page_register_page_component__ = __webpack_require__("../../../../../src/app/pages/register-page/register-page.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -136,19 +145,52 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
+
+
+
+
+
+
 var ROUTES = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_14__pages_sign_in_sing_in_page_component__["a" /* SingInPageComponent */] },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_7__pages_home_page_home_page_component__["a" /* HomePageComponent */] },
+    { path: 'signin', component: __WEBPACK_IMPORTED_MODULE_21__pages_sign_in_sign_in_page_component__["a" /* SignInPageComponent */] },
+    { path: 'register', component: __WEBPACK_IMPORTED_MODULE_26__pages_register_page_register_page_component__["a" /* RegisterComponent */] },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_7__pages_home_page_home_page_component__["a" /* HomePageComponent */] },
     {
+        path: 'users', component: __WEBPACK_IMPORTED_MODULE_14__pages_user_list_page_user_list_page_component__["a" /* UserListPageComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_22__common_auth_service__["a" /* AuthService */]],
+    },
+    {
+        path: 'editUsers', component: __WEBPACK_IMPORTED_MODULE_13__pages_user_edit_page_user_edit_page_component__["a" /* UserEditPageComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_22__common_auth_service__["a" /* AuthService */]],
+    },
+    {
         path: 'tasks', component: __WEBPACK_IMPORTED_MODULE_8__pages_task_list_page_task_list_page_component__["a" /* TaskListPageComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */]],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_22__common_auth_service__["a" /* AuthService */]],
     },
     {
-        path: 'edit', component: __WEBPACK_IMPORTED_MODULE_9__pages_task_edit_page_task_edit_page_component__["a" /* TaskEditPageComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */]],
+        path: 'listChanges', component: __WEBPACK_IMPORTED_MODULE_10__pages_change_list_page_change_list_page_component__["a" /* ChangeListPageComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_22__common_auth_service__["a" /* AuthService */]],
     },
     {
-        path: '**', component: __WEBPACK_IMPORTED_MODULE_10__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */]
+        path: 'editChanges', component: __WEBPACK_IMPORTED_MODULE_11__pages_change_edit_page_change_edit_page_component__["a" /* ChangeEditPageComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_22__common_auth_service__["a" /* AuthService */]],
+    },
+    {
+        path: 'okChanges', component: __WEBPACK_IMPORTED_MODULE_16__pages_change_list_page_changeOk_list_page_component__["a" /* ChangeOkListPageComponent */],
+    },
+    {
+        path: 'code', component: __WEBPACK_IMPORTED_MODULE_17__pages_code_accept_page_code_accept_page_component__["a" /* CodeAcceptPageComponent */],
+    },
+    {
+        path: 'listexChanges', component: __WEBPACK_IMPORTED_MODULE_15__pages_exchange_list_page_exchange_list_page_component__["a" /* ExchangeListComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_22__common_auth_service__["a" /* AuthService */]],
+    },
+    {
+        path: '**', component: __WEBPACK_IMPORTED_MODULE_12__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */]
     }
 ];
 var AppModule = (function () {
@@ -163,16 +205,24 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_7__pages_home_page_home_page_component__["a" /* HomePageComponent */],
             __WEBPACK_IMPORTED_MODULE_8__pages_task_list_page_task_list_page_component__["a" /* TaskListPageComponent */],
             __WEBPACK_IMPORTED_MODULE_9__pages_task_edit_page_task_edit_page_component__["a" /* TaskEditPageComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__pages_sign_in_sing_in_page_component__["a" /* SingInPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
+            __WEBPACK_IMPORTED_MODULE_21__pages_sign_in_sign_in_page_component__["a" /* SignInPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__pages_user_edit_page_user_edit_page_component__["a" /* UserEditPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__pages_user_list_page_user_list_page_component__["a" /* UserListPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_26__pages_register_page_register_page_component__["a" /* RegisterComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_change_list_page_change_list_page_component__["a" /* ChangeListPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__pages_exchange_list_page_exchange_list_page_component__["a" /* ExchangeListComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__pages_change_list_page_changeOk_list_page_component__["a" /* ChangeOkListPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__pages_code_accept_page_code_accept_page_component__["a" /* CodeAcceptPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__pages_change_edit_page_change_edit_page_component__["a" /* ChangeEditPageComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_11__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_18__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot(),
             __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(ROUTES),
             __WEBPACK_IMPORTED_MODULE_3__angular_forms__["b" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_forms__["e" /* ReactiveFormsModule */],
-            __WEBPACK_IMPORTED_MODULE_13__angular_http__["c" /* HttpModule */]
+            __WEBPACK_IMPORTED_MODULE_20__angular_http__["c" /* HttpModule */]
         ],
         providers: [
             {
@@ -181,10 +231,11 @@ AppModule = __decorate([
                     apiURL: 'http://localhost:8080'
                 }
             },
-            __WEBPACK_IMPORTED_MODULE_12__services_todo_service__["a" /* TodoService */],
-            __WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */],
-            __WEBPACK_IMPORTED_MODULE_16__common_app_data_service__["a" /* AppDataService */],
-            __WEBPACK_IMPORTED_MODULE_17__services_users_service__["a" /* UsersService */],
+            __WEBPACK_IMPORTED_MODULE_19__services_todo_service__["a" /* TodoService */],
+            __WEBPACK_IMPORTED_MODULE_22__common_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_23__common_app_data_service__["a" /* AppDataService */],
+            __WEBPACK_IMPORTED_MODULE_25__services_users_service__["a" /* UsersService */],
+            __WEBPACK_IMPORTED_MODULE_24__services_change_service__["a" /* ChangeService */],
             __WEBPACK_IMPORTED_MODULE_4__common_config_app_configuration_service__["a" /* AppConfiguration */]
         ],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
@@ -458,6 +509,27 @@ var INITIAL_CONFIG = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Inje
 
 /***/ }),
 
+/***/ "../../../../../src/app/models/change.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Change; });
+var Change = (function () {
+    function Change(id, nameGame, description, image, state, accept) {
+        this.id = id;
+        this.nameGame = nameGame;
+        this.description = description;
+        this.image = image;
+        this.state = state;
+        this.accept = accept;
+    }
+    return Change;
+}());
+
+//# sourceMappingURL=change.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/models/todo.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -478,7 +550,25 @@ var Todo = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/pages/home-page/home-page.component.css":
+/***/ "../../../../../src/app/models/user.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return User; });
+var User = (function () {
+    function User(firstname, lastname, image) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.image = image;
+    }
+    return User;
+}());
+
+//# sourceMappingURL=user.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/change-edit-page/change-edit-page.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -496,10 +586,381 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
+/***/ "../../../../../src/app/pages/change-edit-page/change-edit-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n    <br>\n    <div id=\"centerbrand\">\n        <img id=\"brand\"  src=\"/assets/images/videojuegos.jpg\" width=\"170\" height=\"80\">\n    </div>\n    <h2 class=\"text-center\">Change Your Game</h2>\n    <br>\n    <br>\n\n    <form [formGroup]=\"changeForm\" (ngSubmit)=\"onSubmit()\" novalidate>\n\n        <div class=\"form-group\">\n            <label for=\"nameGame\">Name Game</label>\n            <input type=\"text\" class=\"form-control\" id=\"nameGame\" formControlName=\"nameGame\" required>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"description\">Description</label>\n            <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"description\" required>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"image\">URL Image (Your Game)</label>\n            <input type=\"text\" class=\"form-control\" id=\"image\" formControlName=\"image\" required>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"state\">State Of The Game</label>    \n            <input type=\"radio\" name=\"state\" class=\"form-control\" id=\"state\" formControlName=\"state\" value=\"like New\"> Like New <br>\n            <input type=\"radio\" name=\"state\" class=\"form-control\" id=\"state\" formControlName=\"state\" value=\"very Good\" checked> Very Good <br>\n            <input type=\"radio\" name=\"state\" class=\"form-control\" id=\"state\" formControlName=\"state\" value=\"good\"> Good <br>\n            <input type=\"radio\" name=\"state\" class=\"form-control\" id=\"state\" formControlName=\"state\" value=\"regular\"> Regular <br>\n        </div>        \n        <div class=\"form-group\">\n            <label for=\"accept\">Terms and Conditions</label>\n            <input type=\"checkbox\" class=\"form-control\" id=\"accept\" formControlName=\"accept\" required> I accept the terms of service <br>\n        </div>\n\n        <br>\n\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!changeForm.valid\">Add Game</button>\n\n    </form>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/change-edit-page/change-edit-page.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChangeEditPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_change_service__ = __webpack_require__("../../../../../src/app/services/change.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var ChangeEditPageComponent = (function () {
+    function ChangeEditPageComponent(changeService, formBuilder, router) {
+        this.changeService = changeService;
+        this.formBuilder = formBuilder;
+        this.router = router;
+    }
+    ChangeEditPageComponent.prototype.ngOnInit = function () {
+        this.changeForm = this.formBuilder.group({
+            nameGame: '',
+            description: '',
+            image: '',
+            state: '',
+            accept: '',
+        });
+    };
+    ChangeEditPageComponent.prototype.onSubmit = function () {
+        var _this = this;
+        this.changeService.create(this.changeForm.get('nameGame').value, this.changeForm.get('description').value, this.changeForm.get('image').value, this.changeForm.get('state').value, Boolean(this.changeForm.get('accept').value)).subscribe(function (serverResponse) {
+            _this.router.navigate(['/listChanges']);
+        }, function (error) {
+            console.log(error);
+        });
+        this.router.navigate(['/listChanges']);
+    };
+    return ChangeEditPageComponent;
+}());
+ChangeEditPageComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-change-edit-page',
+        template: __webpack_require__("../../../../../src/app/pages/change-edit-page/change-edit-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/change-edit-page/change-edit-page.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_change_service__["a" /* ChangeService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_change_service__["a" /* ChangeService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]) === "function" && _c || Object])
+], ChangeEditPageComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=change-edit-page.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/change-list-page/change-list-page.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/change-list-page/change-list-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h2>My List Exchanges</h2>\n<table class=\"table table-bordered\">\n <thead>\n   <tr>\n     <th>id</th>\n     <th>nameGame</th>\n     <th>description</th>\n     <th>image</th>\n     <th>state</th>\n   </tr>\n </thead>\n <tr *ngFor=\"let change of changes\">\n   <td>{{change.id}}</td>\n   <td>{{change.nameGame}}</td>\n   <td>{{change.description}}</td>\n   <td><img [src]=\"change.image\" width=\"150\" height=\"150\" /></td>\n   <td>{{change.state}}</td>\n </tr>\n</table>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/change-list-page/change-list-page.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChangeListPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_change_service__ = __webpack_require__("../../../../../src/app/services/change.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_change__ = __webpack_require__("../../../../../src/app/models/change.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var ChangeListPageComponent = (function () {
+    function ChangeListPageComponent(changeService, router) {
+        this.changeService = changeService;
+        this.router = router;
+        this.changes = [
+            new __WEBPACK_IMPORTED_MODULE_2__models_change__["a" /* Change */](1, "", "", "https://ugc.kn3.net/i/origin/http://www.noticiasdot.com/publicaciones/galerias/Nintendo/2007/NDS_Donkey-Kong-Jungle-Climber-wallpaper/NDS_Donkey-Kong-Jungle-Climber-wallpaper-02.jpg", "", true),
+        ];
+    }
+    ChangeListPageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.changeService.list().subscribe(function (changeResponse) {
+            _this.changes = changeResponse;
+        });
+    };
+    return ChangeListPageComponent;
+}());
+ChangeListPageComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-change-list-page',
+        template: __webpack_require__("../../../../../src/app/pages/change-list-page/change-list-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/change-list-page/change-list-page.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_change_service__["a" /* ChangeService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_change_service__["a" /* ChangeService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]) === "function" && _b || Object])
+], ChangeListPageComponent);
+
+var _a, _b;
+//# sourceMappingURL=change-list-page.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/change-list-page/changeOk-list-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h2>My List Exchanges</h2>\n<table class=\"table table-bordered\">\n <thead>\n   <tr>\n     <th>nameGame</th>\n     <th>description</th>\n     <th>image</th>\n     <th>Add</th>\n   </tr>\n </thead>\n <tr *ngFor=\"let change of changes\">\n   <td>{{change.nameGame}}</td>\n   <td>{{change.description}}</td>\n   <td><img [src]=\"change.image\" width=\"150\" height=\"150\" /></td>\n   <td><button (click)=\"myEvent($event)\" type=\"submit\" class=\"btn btn-success\">Exchange</button></td>\n </tr>\n</table>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/change-list-page/changeOk-list-page.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChangeOkListPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_change_service__ = __webpack_require__("../../../../../src/app/services/change.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_change__ = __webpack_require__("../../../../../src/app/models/change.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var ChangeOkListPageComponent = (function () {
+    function ChangeOkListPageComponent(changeService, router) {
+        this.changeService = changeService;
+        this.router = router;
+        this.changes = [
+            new __WEBPACK_IMPORTED_MODULE_2__models_change__["a" /* Change */](1, "", "", "https://ugc.kn3.net/i/origin/http://www.noticiasdot.com/publicaciones/galerias/Nintendo/2007/NDS_Donkey-Kong-Jungle-Climber-wallpaper/NDS_Donkey-Kong-Jungle-Climber-wallpaper-02.jpg", "", true),
+        ];
+    }
+    ChangeOkListPageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.changeService.list().subscribe(function (changeResponse) {
+            _this.changes = changeResponse;
+        });
+    };
+    ChangeOkListPageComponent.prototype.myEvent = function (event) {
+        this.router.navigate(['/code']);
+    };
+    return ChangeOkListPageComponent;
+}());
+ChangeOkListPageComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-changeOk-list-page',
+        template: __webpack_require__("../../../../../src/app/pages/change-list-page/changeOk-list-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/change-list-page/change-list-page.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_change_service__["a" /* ChangeService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_change_service__["a" /* ChangeService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]) === "function" && _b || Object])
+], ChangeOkListPageComponent);
+
+var _a, _b;
+//# sourceMappingURL=changeOk-list-page.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/code-accept-page/code-accept-page.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/code-accept-page/code-accept-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Code Accept</h1>\n<br>\n<br>\n<img src=\"/assets/images/QR.png\" width=\"150\" height=\"150\" />\n<br>\n<br>\n<p>This QR code is to confirm the transaction, and to make a claim.</p>\n<br>\n<br>\n<button (click)=\"myEvent($event)\" type=\"submit\" class=\"btn btn-success\">Accept</button>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/code-accept-page/code-accept-page.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CodeAcceptPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CodeAcceptPageComponent = (function () {
+    function CodeAcceptPageComponent(router) {
+        this.router = router;
+    }
+    CodeAcceptPageComponent.prototype.ngOnInit = function () {
+    };
+    CodeAcceptPageComponent.prototype.myEvent = function (event) {
+        this.router.navigate(['/listexChanges']);
+    };
+    return CodeAcceptPageComponent;
+}());
+CodeAcceptPageComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-code-accept-page',
+        template: __webpack_require__("../../../../../src/app/pages/code-accept-page/code-accept-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/code-accept-page/code-accept-page.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _a || Object])
+], CodeAcceptPageComponent);
+
+var _a;
+//# sourceMappingURL=code-accept-page.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/exchange-list-page/exchange-list-page.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/exchange-list-page/exchange-list-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h2>Tasks</h2>\n<table class=\"table table-bordered\">\n <thead>\n   <tr>\n     <th>Name Game</th>\n     <th>Description</th>\n     <th>Image</th>\n   </tr>\n </thead>\n <tr *ngFor=\"let change of exchanges\">\n    <td>{{change.nameGame}}</td>\n    <td>{{change.description}}</td>\n    <td><img [src]=\"change.image\" width=\"150\" height=\"150\" /></td>\n    <td><button (click)=\"myEvent($event)\" type=\"submit\" class=\"btn btn-success\">Exchange</button></td>\n </tr>\n</table>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/exchange-list-page/exchange-list-page.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ExchangeListComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_change__ = __webpack_require__("../../../../../src/app/models/change.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ExchangeListComponent = (function () {
+    function ExchangeListComponent(router) {
+        this.router = router;
+        this.exchanges = [
+            new __WEBPACK_IMPORTED_MODULE_1__models_change__["a" /* Change */](1, "", "", "http://2.bp.blogspot.com/-uPDDofi3qOE/UM4VRppTwlI/AAAAAAAAAB0/nDW-TyihLQQ/s1600/Dead+Space+2+Caratula.jpg", "", true),
+            new __WEBPACK_IMPORTED_MODULE_1__models_change__["a" /* Change */](1, "", "", "http://2.bp.blogspot.com/-uPDDofi3qOE/UM4VRppTwlI/AAAAAAAAAB0/nDW-TyihLQQ/s1600/Dead+Space+2+Caratula.jpg", "", true),
+            new __WEBPACK_IMPORTED_MODULE_1__models_change__["a" /* Change */](1, "", "", "http://2.bp.blogspot.com/-uPDDofi3qOE/UM4VRppTwlI/AAAAAAAAAB0/nDW-TyihLQQ/s1600/Dead+Space+2+Caratula.jpg", "", true),
+            new __WEBPACK_IMPORTED_MODULE_1__models_change__["a" /* Change */](1, "", "", "http://2.bp.blogspot.com/-uPDDofi3qOE/UM4VRppTwlI/AAAAAAAAAB0/nDW-TyihLQQ/s1600/Dead+Space+2+Caratula.jpg", "", true),
+        ];
+    }
+    ExchangeListComponent.prototype.ngOnInit = function () {
+        this.exchanges;
+    };
+    ExchangeListComponent.prototype.myEvent = function (event) {
+        this.router.navigate(['/okChanges']);
+    };
+    return ExchangeListComponent;
+}());
+ExchangeListComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-exchange-list-page',
+        template: __webpack_require__("../../../../../src/app/pages/exchange-list-page/exchange-list-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/exchange-list-page/exchange-list-page.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _a || Object])
+], ExchangeListComponent);
+
+var _a;
+//# sourceMappingURL=exchange-list-page.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/home-page/home-page.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\nh2 {\n    font-size: 24px;\n    text-transform: uppercase;\n    color: #303030;\n    font-weight: 600;\n    margin-bottom: 30px;\n}\nh4 {\n    font-size: 19px;\n    line-height: 1.375em;\n    color: #303030;\n    font-weight: 400;\n    margin-bottom: 30px;\n}\n.jumbotron {\n    background-color: #3399ff;\n    color: #fff;\n    padding: 100px 25px;\n    font-family: Montserrat, sans-serif;\n}\n\n\n\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
 /***/ "../../../../../src/app/pages/home-page/home-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  Welcome to COSW angular seed\n</p>"
+module.exports = "\n<head>\n    <link href=\"https://fonts.googleapis.com/css?family=Montserrat\" rel=\"stylesheet\" type=\"text/css\">\n    <link href=\"https://fonts.googleapis.com/css?family=Lato\" rel=\"stylesheet\" type=\"text/css\">\n    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n    <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n</head>\n\n\n<div class=\"jumbotron text-center\">\n    <h1>Brother Games</h1>\n    <p>Search Game</p>\n    <form>\n        <div class=\"input-group\">\n            <input type=\"text\" class=\"form-control\" size=\"50\" placeholder=\"Search Game\" required>\n            <div class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-info\">Search</button>\n            </div>\n        </div>\n    </form>\n</div>\n\n<div id=\"about\" class=\"container-fluid\">\n    <div class=\"row\">\n        <div class=\"col-sm-8\">\n            <h2>About Brother Games </h2><br>\n            <h4>On this page you can search, consult and exchange the video games you want, in addition to consulting the prices of each of them in the different internet gaming platforms.</h4>\n            <br>\n            <h4>To be able to exchange a game you must first register to be able to log in and make the exchange</h4>\n\n        </div>\n\n        <div id=\"centerbrand\">\n\n            <img id=\"brand\"  src=\"/assets/images/videojuegos.jpg\" width=\"300\" height=\"200\">\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -600,7 +1061,7 @@ PageNotFoundComponent = __decorate([
 
 /***/ }),
 
-/***/ "../../../../../src/app/pages/sign-in/sing-in-page.component.css":
+/***/ "../../../../../src/app/pages/register-page/register-page.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -608,7 +1069,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".container{\n    position: relative;\n    width: 400px;\n    -ms-flex-line-pack: center;\n        align-content: center;\n    background-color: transparent;\n}\n\n#centerbrand{\n    position: relative;\n    width: 400px;\n    height: 100px;\n}\n\n#brand{\n    position: absolute;\n    width: 200px;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    margin: auto;\n}\n\n.btn-success{\n    background-color: #1FE932;\n    border: none;\n    padding: 10px 145px;\n}", ""]);
 
 // exports
 
@@ -618,18 +1079,18 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ "../../../../../src/app/pages/sign-in/sing-in-page.component.html":
+/***/ "../../../../../src/app/pages/register-page/register-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <h2>Sign In</h2>\n    <form [formGroup]=\"signInForm\" (ngSubmit)=\"doLogin()\" novalidate>\n      <div class=\"form-group\">\n        <label for=\"description\">Username</label>\n        <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"username\" required>\n      </div>\n  \n      <div class=\"form-group\">\n        <label for=\"priority\">Password</label>\n        <input type=\"password\" class=\"form-control\" id=\"alterEgo\" formControlName=\"password\">\n      </div>\n  \n      <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!signInForm.valid\">Sign In</button>\n  \n      <p class=\"text-danger mt-1\" *ngIf=\"loginError\">{{loginError}}</p>\n  \n    </form>\n  </div>"
+module.exports = "<div class=\"container\">\n    <br>\n    <div id=\"centerbrand\">\n        <img id=\"brand\"  src=\"/assets/images/videojuegos.jpg\" width=\"170\" height=\"80\">\n    </div>\n    <h2 class=\"text-center\">REGISTER TO BROTHERS GAMES</h2>\n    <br>\n    <br>\n\n    <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmit()\" novalidate>\n\n        <div class=\"form-group\">\n            <label for=\"description\">Username</label>\n            <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"username\" required>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"priority\">Email</label>\n            <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"priority\">Password</label>\n            <input type=\"password\" class=\"form-control\" id=\"password\" formControlName=\"password\" required>\n        </div>\n        <br>\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!registerForm.valid\">REGISTER</button>\n\n    </form>\n</div>\n\n\n"
 
 /***/ }),
 
-/***/ "../../../../../src/app/pages/sign-in/sing-in-page.component.ts":
+/***/ "../../../../../src/app/pages/register-page/register-page.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SingInPageComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
@@ -647,19 +1108,104 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var SingInPageComponent = (function () {
-    function SingInPageComponent(usersService, formBuilder, router) {
+var RegisterComponent = (function () {
+    function RegisterComponent(todoUser, formBuilder, router) {
+        this.todoUser = todoUser;
+        this.formBuilder = formBuilder;
+        this.router = router;
+    }
+    RegisterComponent.prototype.ngOnInit = function () {
+        this.registerForm = this.formBuilder.group({
+            username: '',
+            email: '',
+            password: '',
+        });
+    };
+    RegisterComponent.prototype.onSubmit = function () {
+        var _this = this;
+        this.todoUser.create(this.registerForm.get('username').value, this.registerForm.get('email').value, this.registerForm.get('password').value).subscribe(function (serverResponse) {
+            _this.router.navigate(['/users']);
+        }, function (error) {
+            console.log(error);
+        });
+        this.router.navigate(['/users']);
+    };
+    return RegisterComponent;
+}());
+RegisterComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-register-page',
+        template: __webpack_require__("../../../../../src/app/pages/register-page/register-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/register-page/register-page.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _c || Object])
+], RegisterComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=register-page.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/sign-in/sign-in-page.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".container{\n    position: relative;\n    width: 400px;\n    -ms-flex-line-pack: center;\n        align-content: center;\n    background-color: transparent;\n}\n\n#centerbrand{\n    position: relative;\n    width: 400px;\n    height: 100px;\n}\n\n#brand{\n    position: absolute;\n    width: 200px;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    margin: auto;\n}\n\n.btn-success{\n    background-color: #1FE932;\n    border: none;\n    padding: 10px 155px;\n}\n\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/sign-in/sign-in-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n  <br>\n  <div id=\"centerbrand\">\n\n    <img id=\"brand\"  src=\"/assets/images/videojuegos.jpg\" width=\"170\" height=\"80\">\n  </div>\n\n  <h2 class=\"text-center\">SIGN IN BROTHERS GAMES</h2>\n  <br>\n  <br>\n  <form [formGroup]=\"signInForm\" (ngSubmit)=\"doLogin()\" novalidate>\n\n    <div class=\"form-group\">\n      <label  for=\"description\">Username</label>\n      <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"username\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"priority\">Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"alterEgo\" formControlName=\"password\" required>\n    </div>\n    <br>\n    <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!signInForm.valid\">SIGN IN</button>\n\n\n    <p class=\"text-danger mt-1\" *ngIf=\"loginError\">{{loginError}}</p>\n  </form>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/sign-in/sign-in-page.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignInPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var SignInPageComponent = (function () {
+    function SignInPageComponent(usersService, formBuilder, router) {
         this.usersService = usersService;
         this.formBuilder = formBuilder;
         this.router = router;
     }
-    SingInPageComponent.prototype.ngOnInit = function () {
+    SignInPageComponent.prototype.ngOnInit = function () {
         this.signInForm = this.formBuilder.group({
             username: '',
             password: '',
         });
     };
-    SingInPageComponent.prototype.doLogin = function () {
+    SignInPageComponent.prototype.doLogin = function () {
         var _this = this;
         this.usersService.login(this.signInForm.get('username').value, this.signInForm.get('password').value).subscribe(function (loginResponse) {
             _this.router.navigate(['tasks']);
@@ -667,19 +1213,19 @@ var SingInPageComponent = (function () {
             _this.loginError = 'Error Signing in: ' + (error && error.message ? error.message : '');
         });
     };
-    return SingInPageComponent;
+    return SignInPageComponent;
 }());
-SingInPageComponent = __decorate([
+SignInPageComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: 'app-sing-in-page',
-        template: __webpack_require__("../../../../../src/app/pages/sign-in/sing-in-page.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/pages/sign-in/sing-in-page.component.css")]
+        selector: 'app-sign-in-page',
+        template: __webpack_require__("../../../../../src/app/pages/sign-in/sign-in-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/sign-in/sign-in-page.component.css")]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _c || Object])
-], SingInPageComponent);
+], SignInPageComponent);
 
 var _a, _b, _c;
-//# sourceMappingURL=sing-in-page.component.js.map
+//# sourceMappingURL=sign-in-page.component.js.map
 
 /***/ }),
 
@@ -838,14 +1384,177 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/todo.service.ts":
+/***/ "../../../../../src/app/pages/user-edit-page/user-edit-page.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/user-edit-page/user-edit-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n    <h2>Edit User</h2>\n    <form [formGroup]=\"todoForm\" (ngSubmit)=\"onSubmit()\" novalidate>\n      <div class=\"form-group\">\n        <label for=\"firstname\">Name</label>\n        <input type=\"text\" class=\"form-control\" id=\"firstname\" formControlName=\"firstname\" required>\n      </div>\n  \n      <div class=\"form-group\">\n        <label for=\"lastname\">LastName</label>\n        <input type=\"text\" class=\"form-control\" id=\"lastname\" formControlName=\"lastname\" required>\n      </div>\n  \n      <div class=\"form-group\">\n        <label for=\"image\">Image</label>\n        <input type=\"text\" class=\"form-control\" id=\"image\" formControlName=\"image\" required>\n      </div>\n  \n      <button type=\"submit\" class=\"btn btn-success\">Save</button>\n  \n    </form>\n  </div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/user-edit-page/user-edit-page.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TodoService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserEditPageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_todo__ = __webpack_require__("../../../../../src/app/models/todo.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/add/observable/of.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var UserEditPageComponent = (function () {
+    function UserEditPageComponent(todoUser, formBuilder, router) {
+        this.todoUser = todoUser;
+        this.formBuilder = formBuilder;
+        this.router = router;
+    }
+    UserEditPageComponent.prototype.ngOnInit = function () {
+        this.todoForm = this.formBuilder.group({
+            firstname: '',
+            lastname: '',
+            image: ''
+        });
+    };
+    UserEditPageComponent.prototype.onSubmit = function () {
+        var _this = this;
+        this.todoUser.create(this.todoForm.get('firstname').value, this.todoForm.get('lastname').value, this.todoForm.get('image').value).subscribe(function (serverResponse) {
+            _this.router.navigate(['/users']);
+        }, function (error) {
+            console.log(error);
+        });
+        this.router.navigate(['/users']);
+    };
+    return UserEditPageComponent;
+}());
+UserEditPageComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-user-edit-page',
+        template: __webpack_require__("../../../../../src/app/pages/user-edit-page/user-edit-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/user-edit-page/user-edit-page.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _c || Object])
+], UserEditPageComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=user-edit-page.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/user-list-page/user-list-page.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/user-list-page/user-list-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h2>Users</h2>\n<table class=\"table table-bordered\">\n <thead>\n   <tr>\n     <th>Name</th>\n     <th>LastName</th>\n     <th>Image</th>\n   </tr>\n </thead>\n <tr *ngFor=\"let user of users\">\n   <td>{{user.firstname}}</td>\n   <td>{{user.lastname}}</td>\n   <td><img [src]=\"user.image\" width=\"150\" height=\"150\" /></td>\n </tr>\n</table>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/user-list-page/user-list-page.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserListPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+// tslint:disable-next-line:import-spacing
+
+var UserListPageComponent = (function () {
+    function UserListPageComponent(usersService) {
+        this.usersService = usersService;
+        this.users = [];
+        // tslint:disable-next-line:no-trailing-whitespace
+    }
+    UserListPageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.usersService.list().subscribe(function (todosResponse) {
+            _this.users = todosResponse;
+            // tslint:disable-next-line:semicolon
+        });
+    };
+    return UserListPageComponent;
+}());
+UserListPageComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-user-list-page',
+        template: __webpack_require__("../../../../../src/app/pages/user-list-page/user-list-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/user-list-page/user-list-page.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_users_service__["a" /* UsersService */]) === "function" && _a || Object])
+], UserListPageComponent);
+
+var _a;
+//# sourceMappingURL=user-list-page.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/services/change.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChangeService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_change__ = __webpack_require__("../../../../../src/app/models/change.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_api_service__ = __webpack_require__("../../../../../src/app/common/api.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/add/observable/of.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -862,6 +1571,63 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+var ChangeService = (function (_super) {
+    __extends(ChangeService, _super);
+    function ChangeService() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.resourceUrl = 'api/change';
+        _this.cont = 0;
+        _this.changes = [];
+        return _this;
+    }
+    ChangeService.prototype.create = function (value0, value1, value2, value3, bool) {
+        this.cont += 1;
+        return this.post(this.resourceUrl, new __WEBPACK_IMPORTED_MODULE_1__models_change__["a" /* Change */](this.cont, value0, value1, value2, value3, bool));
+    };
+    ChangeService.prototype.list = function () {
+        return this.get(this.resourceUrl);
+    };
+    return ChangeService;
+}(__WEBPACK_IMPORTED_MODULE_2__common_api_service__["a" /* APIService */]));
+ChangeService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])()
+], ChangeService);
+
+//# sourceMappingURL=change.service.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/services/todo.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TodoService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_todo__ = __webpack_require__("../../../../../src/app/models/todo.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_api_service__ = __webpack_require__("../../../../../src/app/common/api.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/add/observable/of.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__);
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
 
 
 
@@ -898,6 +1664,9 @@ TodoService = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_config_app_configuration_service__ = __webpack_require__("../../../../../src/app/common/config/app-configuration.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_auth_service__ = __webpack_require__("../../../../../src/app/common/auth.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_user__ = __webpack_require__("../../../../../src/app/models/user.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/add/observable/of.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of__);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -922,6 +1691,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var UsersService = (function (_super) {
     __extends(UsersService, _super);
     function UsersService(config, authService, http) {
@@ -929,6 +1700,12 @@ var UsersService = (function (_super) {
         _this.config = config;
         _this.authService = authService;
         _this.http = http;
+        _this.users = [
+            // tslint:disable-next-line:max-line-length
+            // tslint:disable-next-line:whitespace
+            new __WEBPACK_IMPORTED_MODULE_5__models_user__["a" /* User */]('Camilo', 'Garcia', 'http://farm6.static.flickr.com/5178/5428759578_d6fb2288a4.jpg'),
+        ];
+        _this.resourceUrl = 'user/items';
         return _this;
     }
     UsersService.prototype.login = function (username, password) {
@@ -940,7 +1717,10 @@ var UsersService = (function (_super) {
         });
     };
     UsersService.prototype.list = function () {
-        return null;
+        return this.get(this.resourceUrl);
+    };
+    UsersService.prototype.create = function (firstname, lastname, image) {
+        return this.post(this.resourceUrl, new __WEBPACK_IMPORTED_MODULE_5__models_user__["a" /* User */](firstname, lastname, image));
     };
     return UsersService;
 }(__WEBPACK_IMPORTED_MODULE_1__common_api_service__["a" /* APIService */]));

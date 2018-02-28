@@ -34,6 +34,19 @@ public class User
         this.lastname = lastname;
         this.image = image;
     }
+    public User(int id,String email, String password, String name, String image) {
+
+        this.email = email;
+
+        this.password = password;
+
+        this.image = image;
+
+        this.firstname = name;
+
+        this.id=id;
+
+    }
 
 
     public long getId()
