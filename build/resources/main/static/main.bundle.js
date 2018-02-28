@@ -173,9 +173,11 @@ var ROUTES = [
     },
     {
         path: 'listChanges', component: __WEBPACK_IMPORTED_MODULE_10__pages_change_list_page_change_list_page_component__["a" /* ChangeListPageComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_22__common_auth_service__["a" /* AuthService */]],
     },
     {
         path: 'editChanges', component: __WEBPACK_IMPORTED_MODULE_11__pages_change_edit_page_change_edit_page_component__["a" /* ChangeEditPageComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_22__common_auth_service__["a" /* AuthService */]],
     },
     {
         path: 'okChanges', component: __WEBPACK_IMPORTED_MODULE_16__pages_change_list_page_changeOk_list_page_component__["a" /* ChangeOkListPageComponent */],
@@ -185,6 +187,7 @@ var ROUTES = [
     },
     {
         path: 'listexChanges', component: __WEBPACK_IMPORTED_MODULE_15__pages_exchange_list_page_exchange_list_page_component__["a" /* ExchangeListComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_22__common_auth_service__["a" /* AuthService */]],
     },
     {
         path: '**', component: __WEBPACK_IMPORTED_MODULE_12__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */]
@@ -586,7 +589,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/change-edit-page/change-edit-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <br>\n    <div id=\"centerbrand\">\n        <img id=\"brand\"  src=\"/assets/images/videojuegos.jpg\" width=\"170\" height=\"80\">\n    </div>\n    <h2 class=\"text-center\">Change Your Game</h2>\n    <br>\n    <br>\n\n    <form [formGroup]=\"changeForm\" (ngSubmit)=\"onSubmit()\" novalidate>\n\n        <div class=\"form-group\">\n            <label for=\"nameGame\">Name Game</label>\n            <input type=\"text\" class=\"form-control\" id=\"nameGame\" formControlName=\"nameGame\" required>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"description\">Description</label>\n            <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"description\" required>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"image\">URL Image (Your Game)</label>\n            <input type=\"text\" class=\"form-control\" id=\"password\" formControlName=\"password\" required>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"state\">State Of The Game</label>    \n            <input type=\"radio\" name=\"state\" class=\"form-control\" id=\"state\" formControlName=\"state\" value=\"like New\"> Like New <br>\n            <input type=\"radio\" name=\"state\" class=\"form-control\" id=\"state\" formControlName=\"state\" value=\"very Good\" checked> Very Good <br>\n            <input type=\"radio\" name=\"state\" class=\"form-control\" id=\"state\" formControlName=\"state\" value=\"good\"> Good <br>\n            <input type=\"radio\" name=\"state\" class=\"form-control\" id=\"state\" formControlName=\"state\" value=\"regular\"> Regular <br>\n        </div>        \n        <div class=\"form-group\">\n            <label for=\"accept\">Terms and Conditions</label>\n            <input type=\"checkbox\" class=\"form-control\" id=\"accept\" formControlName=\"accept\" required> I accept the terms of service <br>\n        </div>\n\n        <br>\n\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!changeForm.valid\">Add Game</button>\n\n    </form>\n</div>"
+module.exports = "<div class=\"container\">\n    <br>\n    <div id=\"centerbrand\">\n        <img id=\"brand\"  src=\"/assets/images/videojuegos.jpg\" width=\"170\" height=\"80\">\n    </div>\n    <h2 class=\"text-center\">Change Your Game</h2>\n    <br>\n    <br>\n\n    <form [formGroup]=\"changeForm\" (ngSubmit)=\"onSubmit()\" novalidate>\n\n        <div class=\"form-group\">\n            <label for=\"nameGame\">Name Game</label>\n            <input type=\"text\" class=\"form-control\" id=\"nameGame\" formControlName=\"nameGame\" required>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"description\">Description</label>\n            <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"description\" required>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"image\">URL Image (Your Game)</label>\n            <input type=\"text\" class=\"form-control\" id=\"image\" formControlName=\"image\" required>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"state\">State Of The Game</label>    \n            <input type=\"radio\" name=\"state\" class=\"form-control\" id=\"state\" formControlName=\"state\" value=\"like New\"> Like New <br>\n            <input type=\"radio\" name=\"state\" class=\"form-control\" id=\"state\" formControlName=\"state\" value=\"very Good\" checked> Very Good <br>\n            <input type=\"radio\" name=\"state\" class=\"form-control\" id=\"state\" formControlName=\"state\" value=\"good\"> Good <br>\n            <input type=\"radio\" name=\"state\" class=\"form-control\" id=\"state\" formControlName=\"state\" value=\"regular\"> Regular <br>\n        </div>        \n        <div class=\"form-group\">\n            <label for=\"accept\">Terms and Conditions</label>\n            <input type=\"checkbox\" class=\"form-control\" id=\"accept\" formControlName=\"accept\" required> I accept the terms of service <br>\n        </div>\n\n        <br>\n\n        <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!changeForm.valid\">Add Game</button>\n\n    </form>\n</div>"
 
 /***/ }),
 
