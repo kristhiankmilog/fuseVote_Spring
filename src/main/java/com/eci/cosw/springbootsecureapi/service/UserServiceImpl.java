@@ -19,9 +19,9 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     public UserServiceImpl() {
-        users.add(new User(1,"prueba@mail.com","password","Mape","http://www.your3dsource.com/images/facepic1.jpeg"));
+        users.add(new User(1,"prueba@mail.com","password","Maria Paula","Pinzon","Mape","https://scontent.fbog3-1.fna.fbcdn.net/v/t1.0-9/18699818_10212427754544303_6690553113314510848_n.jpg?oh=2045634da1446089333c804ca41eb98c&oe=5B0C6D78","Student"));
 
-        users.add(new User(2,"prueba2@mail.com","password","Camilo","http://www.your3dsource.com/images/facepic2.jpeg"));
+        users.add(new User(2,"prueba2@mail.com","password","Camilo","Garcia","Souls","https://scontent.fbog3-1.fna.fbcdn.net/v/t1.0-9/15826909_10212344692311984_5991376075375360383_n.jpg?oh=eeea7771d5ca2b2f677b002879caaa69&oe=5B18D977","Student and Gamer"));
     }
 
     @PostConstruct

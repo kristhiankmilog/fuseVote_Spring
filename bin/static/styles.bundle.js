@@ -42,7 +42,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "body {\n  min-height: 75rem;\n  padding-top: 4.5rem;\n  background-image: url(" + __webpack_require__("../../../../../src/assets/images/mario.jpg") + ");\n  background: linear-gradient(to bottom, #33cc33 -15%, #66ccff 39%);\n}\n", ""]);
+exports.push([module.i, "body {\r\n  min-height: 75rem;\r\n  padding-top: 4.5rem;\r\n  background-image: url(" + __webpack_require__("../../../../../src/assets/images/mario.jpg") + ");\r\n  background: linear-gradient(to bottom, #33cc33 -15%, #66ccff 39%);\r\n}\r\n", ""]);
 
 // exports
 

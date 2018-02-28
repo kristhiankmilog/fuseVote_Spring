@@ -20,6 +20,7 @@ public class User
     private String username;
 
     private String image;
+    private String description;
 
 
     public User()
@@ -34,7 +35,7 @@ public class User
         this.lastname = lastname;
         this.image = image;
     }
-    public User(int id,String email, String password, String name, String image) {
+    public User(int id,String email, String password, String name,String lastname, String username, String image, String description) {
 
         this.email = email;
 
@@ -45,9 +46,22 @@ public class User
         this.firstname = name;
 
         this.id=id;
+        this.lastname = lastname;
+
+        this.description = description;
+
+        this.username = username;
 
     }
+    public String getDescription()
+    {
+        return description;
+    }
 
+    public void setDescription( String description )
+    {
+        this.description = description;
+    }
 
     public long getId()
     {
@@ -122,6 +136,6 @@ public class User
     public String toString()
     {
         return "User{" + "id=" + id + ", email='" + email + '\'' + ", password='" + password + '\'' + ", firstname='"
-            + firstname + '\'' + '}';
-    }
+            + firstname +  ", username='" + username + '\'' + ", image='" + image + '\'' +'}';
+}
 }

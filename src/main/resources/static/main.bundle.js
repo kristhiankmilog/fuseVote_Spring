@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse\">\r\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\r\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n  <a class=\"navbar-brand\" href=\"#\">BrotherGames</a>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">Home</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/profile\" routerLink=\"/profile\">Profile</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/searchGames\" routerLink=\"/searchGames\">Games</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/edit\" routerLink=\"/edit\">Games Exchange</a>\r\n      </li>\r\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\r\n        <a href=\"#\" class=\"nav-link\" (click)=\"signOut()\">(Sign Out)</a>\r\n      </li>\r\n      </ul>\r\n\r\n      <form class=\"form-inline my-2 my-lg-0\">\r\n        <ul class=\"navbar-nav mr-auto\">\r\n\r\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\r\n            <a class=\"nav-link\"  routerLinkActive=\"/register\" routerLink=\"/register\">REGISTER<span class=\"sr-only\">(current)</span></a>\r\n          </li>\r\n\r\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\r\n            <a class=\"nav-link\" routerLinkActive=\"/signin\" routerLink=\"/signin\">SIGN IN<span class=\"sr-only\">(current)</span></a>\r\n          </li>\r\n\r\n          <li *ngIf=\"isLoggedIn()\" class=\"nav-item active\">\r\n            <a class=\"nav-link\"  routerLinkActive=\"/editUsers\" routerLink=\"/editUsers\">Profile<span class=\"sr-only\">(current)</span></a>\r\n          </li>\r\n        </ul>\r\n    </form>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n</div>"
+module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse\">\r\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\r\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n  <a class=\"navbar-brand\" href=\"#\">BrotherGames</a>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\r\n    <ul class=\"navbar-nav mr-auto\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">Home</a>\r\n      </li>\r\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/profile\" routerLink=\"/profile\">Profile</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/searchGames\" routerLink=\"/searchGames\">Games</a>\r\n      </li>\r\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\r\n        <a class=\"nav-link\" routerLinkActive=\"/edit\" routerLink=\"/edit\">Games Exchange</a>\r\n      </li>\r\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\r\n        <a href=\"#\" class=\"nav-link\" (click)=\"signOut()\">(Sign Out)</a>\r\n      </li>\r\n      </ul>\r\n\r\n      <form class=\"form-inline my-2 my-lg-0\">\r\n        <ul class=\"navbar-nav mr-auto\">\r\n\r\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\r\n            <a class=\"nav-link\"  routerLinkActive=\"/register\" routerLink=\"/register\">REGISTER<span class=\"sr-only\">(current)</span></a>\r\n          </li>\r\n\r\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\r\n            <a class=\"nav-link\" routerLinkActive=\"/signin\" routerLink=\"/signin\">SIGN IN<span class=\"sr-only\">(current)</span></a>\r\n          </li>\r\n\r\n        </ul>\r\n    </form>\r\n\r\n  </div>\r\n</nav>\r\n\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n</div>"
 
 /***/ }),
 
@@ -788,7 +788,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/profile-page/profile-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<script src=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js\"></script>\r\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>\r\n\r\n\r\n<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"panel panel-default\">\r\n            <div class=\"panel-heading\">\r\n                <h4>User Profile</h4>\r\n            </div>\r\n                <div class=\"panel-body\">\r\n                    <div class=\"col-md-4 col-xs-12 col-sm-6 col-lg-4\">\r\n                        <img src=\"user.image\" width=\"200\" height=\"200\"  *ngFor=\"let user of users\">\r\n\r\n\r\n                    </div>\r\n                    <div class=\"col-md-8 col-xs-12 col-sm-6 col-lg-8\">\r\n                        <div class=\"container\">\r\n                        </div>\r\n                        <hr>\r\n                        <ul class=\"container details\">\r\n                            <table>\r\n                                <tr *ngFor=\"let user of users\">\r\n                                    Name: <td>{{user.firstname}}</td>\r\n                                    Email: <td>{{user.email}}</td>\r\n                                </tr>\r\n                            </table>\r\n                        </ul>\r\n                        <hr>\r\n                        <button type=\"button\" class=\"btn btn-primary\" routerLinkActive=\"/editProfile\" routerLink=\"/editProfile\">Edit Profile</button>\r\n                    </div>\r\n                </div>\r\n        </div>\r\n\r\n    </div>"
+module.exports = "<script src=\"//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js\"></script>\r\n<script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script>\r\n\r\n\r\n<div class=\"container\">\r\n    <form [formGroup]=\"userForm\">\r\n        <div>\r\n            <img src={{user.image}} width=\"250\" height=\"250\" />\r\n        </div>\r\n        <br>\r\n        <br>\r\n        <div>\r\n            <p for=\"firstname\"> <b>Name:</b></p>\r\n            <label id=\"firstname\">{{user.firstname}} {{user.lastname}}</label>\r\n        </div>\r\n\r\n        <div>\r\n            <p for=\"email\"><b>Email:</b></p>\r\n            <label id=\"email\">{{user.email}}</label>\r\n        </div>\r\n\r\n        <div>\r\n            <p for=\"username\"><b>Username:</b></p>\r\n            <label id=\"username\">{{user.username}}</label>\r\n        </div>\r\n\r\n        <div>\r\n            <p for=\"aboutYou\"><b>About me:</b></p>\r\n            <label id=\"aboutYou\">{{user.description}}</label>\r\n        </div>\r\n        <br>\r\n        <br>\r\n        <button type=\"button\" class=\"btn btn-primary\" routerLinkActive=\"/editProfile\" routerLink=\"/editProfile\">Edit Profile</button>\r\n    </form>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -823,10 +823,18 @@ var ProfilePageComponent = (function () {
     }
     ProfilePageComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.userService.getUserById(1).subscribe(function (todosResponse) {
-            _this.users = todosResponse;
+        this.userService.getUser('prueba2@mail.com').subscribe(function (data) {
+            _this.user = data;
         }, function (error) {
             console.log("error");
+        });
+        this.userForm = this.formBuilder.group({
+            firstname: '',
+            lastname: '',
+            email: '',
+            username: '',
+            aboutYou: '',
+            image: ''
         });
     };
     return ProfilePageComponent;
@@ -1471,10 +1479,10 @@ var UsersService = (function (_super) {
         });
     };
     UsersService.prototype.getUser = function (email) {
-        return this.get(this.resourceUrl + '/' + 1);
+        return this.get(this.resourceUrl + '/' + email);
     };
     UsersService.prototype.currentUser = function () {
-        return this.get(this.resourceUrl + '/' + sessionStorage.getItem("username"));
+        return this.get(this.resourceUrl + '/' + sessionStorage.getItem("email"));
     };
     return UsersService;
 }(__WEBPACK_IMPORTED_MODULE_1__common_api_service__["a" /* APIService */]));
