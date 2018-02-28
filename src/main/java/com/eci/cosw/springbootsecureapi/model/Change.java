@@ -10,6 +10,12 @@ public class Change{
     private Boolean accept;
 
     public Change(Integer id, String nameGame, String description, String image, String state, Boolean accept){
+	this.setId(id);
+	this.setNameGame(nameGame);
+	this.setDescription(description);
+	this.setImage(image);
+	this.setState(state);
+	this.setAccept(accept);
         
         
     }
