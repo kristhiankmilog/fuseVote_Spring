@@ -5,9 +5,14 @@ import java.util.List;
 import javax.servlet.ServletException;
 
 import com.eci.cosw.springbootsecureapi.model.User;
+import com.eci.cosw.springbootsecureapi.service.ServicesException;
 import com.eci.cosw.springbootsecureapi.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -21,76 +26,137 @@ import io.jsonwebtoken.SignatureAlgorithm;
  * 8/21/17.
  */
 @RestController
-@RequestMapping( "user" )
-public class UserController
-{
+@RequestMapping("user")
+public class UserController {
 
     @Autowired
     private UserService userService;
 
-    @RequestMapping( value = "/items", method = RequestMethod.GET )
-    public List<User> getUsers(){
+    @RequestMapping(value = "/items", method = RequestMethod.GET)
+    public List<User> getUsers() {
         return userService.getUsers();
-}
-@RequestMapping( value = "/items", method = RequestMethod.POST )
-public User setTodo(@RequestBody User user){
-    return userService.RegisterUser(user);
-}
+    }
 
-    @RequestMapping( value = "/login", method = RequestMethod.POST )
-    public Token login( @RequestBody User login )
-        throws ServletException
-    {
+    @RequestMapping(value = "/items", method = RequestMethod.POST)
+    public User setTodo(@RequestBody User user) {
+        return userService.RegisterUser(user);
+
+    }
+
+    @RequestMapping(value = "/{email}", method = RequestMethod.GET)
+
+    public User getUsersByEmail(@PathVariable("email") String email) {
+        return userService.findUserByEmail(email);
+    }
+
+    @RequestMapping(value = "/id/{id}", method = RequestMethod.GET)
+
+    public User getUsersById(@PathVariable("id") int id) {
+
+        System.out.println("Id: " + id);
+
+        return userService.findUserById(id);
+
+    }
+    @RequestMapping( value = "/", method = RequestMethod.POST )
+
+    public User setUsers(@RequestBody User user) throws ServicesException {
+
+        if(user.getUsername()==null || user.getUsername().trim().isEmpty()){
+
+            throw new ServicesException("Please fill in name");
+
+        }
+
+        else if(user.getEmail()==null || user.getEmail().trim().isEmpty()){
+
+            throw new ServicesException("Please fill in email");
+
+        }
+
+        else if(userService.findUserByEmail(user.getEmail())!=null){
+
+            throw  new ServicesException("Email alredy registered. Please try again.");
+
+        }
+
+        else if(user.getPassword()==null || user.getPassword().trim().isEmpty()){
+
+            throw new ServicesException("Please fill in password");
+
+        }
+
+
+        else{
+
+            return userService.createUser(user);
+
+        }
+
+    }
+
+    @RequestMapping(value = "/updateprofile/{id}", method = RequestMethod.POST)
+
+    public User updateUser(@RequestBody User updateuser, @PathVariable("id") int id) throws ServicesException {
+
+        User u = userService.findUserById(id);
+
+        if (!updateuser.getEmail().trim().equals(u.getEmail())
+                && userService.findUserByEmail(updateuser.getEmail()) != null) {
+
+            throw new ServicesException("Email alredy registered. Please try again.");
+
+        } else {
+
+            return userService.updateUser(updateuser, u);
+
+        }
+
+    }
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public Token login(@RequestBody User login) throws ServletException {
 
         String jwtToken = "";
 
-        if ( login.getUsername() == null || login.getPassword() == null )
-        {
-            throw new ServletException( "Please fill in username and password" );
+        if (login.getEmail() == null || login.getPassword() == null) {
+            System.out.println(getUsersByEmail(login.getEmail()));
+            throw new ServletException("Please fill in email and password");
         }
 
-        String username = login.getUsername();
+        String username = login.getEmail();
         String password = login.getPassword();
 
-        User user = userService.getUser( 0l );
+        User user = userService.findUserByEmailAndPassword(username, password);
 
-        if ( user == null )
-        {
-            throw new ServletException( "User username not found." );
+        if (user == null) {
+            throw new ServletException("User email not found.");
         }
 
         String pwd = user.getPassword();
 
-        if ( !password.equals( pwd ) )
-        {
-            throw new ServletException( "Invalid login. Please check your name and password." );
+        if (!password.equals(pwd)) {
+            throw new ServletException("Invalid login. Please check your email and password.");
         }
 
-        jwtToken = Jwts.builder().setSubject( username ).claim( "roles", "user" ).setIssuedAt( new Date() ).signWith(
-            SignatureAlgorithm.HS256, "secretkey" ).compact();
+        jwtToken = Jwts.builder().setSubject(username).claim("roles", "user").setIssuedAt(new Date())
+                .signWith(SignatureAlgorithm.HS256, "secretkey").compact();
 
-        return new Token( jwtToken );
+        return new Token(jwtToken);
     }
 
-    public class Token
-    {
+    public class Token {
 
         String access_token;
 
-
-        public Token( String access_token )
-        {
+        public Token(String access_token) {
             this.access_token = access_token;
         }
 
-
-        public String getAccessToken()
-        {
+        public String getAccessToken() {
             return access_token;
         }
 
-        public void setAccessToken( String access_token )
-        {
+        public void setAccessToken(String access_token) {
             this.access_token = access_token;
         }
     }

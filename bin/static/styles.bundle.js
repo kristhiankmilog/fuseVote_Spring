@@ -1,5 +1,12 @@
 webpackJsonp(["styles"],{
 
+/***/ "../../../../../src/assets/images/mario.jpg":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "mario.5ce84d8d049e9b204d70.jpg";
+
+/***/ }),
+
 /***/ "../../../../../src/styles.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -35,7 +42,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "body {\n  min-height: 75rem;\n  padding-top: 4.5rem;\n}\n", ""]);
+exports.push([module.i, "body {\r\n  min-height: 75rem;\r\n  padding-top: 4.5rem;\r\n  background-image: url(" + __webpack_require__("../../../../../src/assets/images/mario.jpg") + ");\r\n  background: linear-gradient(to bottom, #33cc33 -15%, #66ccff 39%);\r\n}\r\n", ""]);
 
 // exports
 
