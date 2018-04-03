@@ -1,4 +1,9 @@
 package com.eci.cosw.springbootsecureapi.model;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * @author Santiago Carrillo
@@ -6,12 +11,14 @@ package com.eci.cosw.springbootsecureapi.model;
  */
 
 
-public class User
-{
-    
-    private long id;
+@Entity
+@Table(name = "User")
+public class User {
+
+    private int  id;
 
     private String email;
+
     private String password;
 
     private String firstname;
@@ -21,6 +28,7 @@ public class User
     private String username;
 
     private String image;
+
     private String description;
 
 
@@ -47,6 +55,7 @@ public class User
         this.firstname = name;
 
         this.id=id;
+
         this.lastname = lastname;
 
         this.description = description;
@@ -54,6 +63,8 @@ public class User
         this.username = username;
 
     }
+
+    @Column(name = "description")
     public String getDescription()
     {
         return description;
@@ -64,15 +75,13 @@ public class User
         this.description = description;
     }
 
-    public long getId()
-    {
-        return id;
-    }
 
-    public void setId( long id )
-    {
-        this.id = id;
-    }
+    @Column(name = "id")
+    public int getId(){ return id; }
+
+    public void setId(int id ){ this.id = id; }
+
+    @Column(name = "image")
     public String getImage()
     {
         return image;
@@ -83,6 +92,7 @@ public class User
         this.image = image;
     }
 
+    @Id
     public String getEmail()
     {
         return email;
@@ -93,6 +103,7 @@ public class User
         this.email = email;
     }
 
+    @Column(name = "password")
     public String getPassword()
     {
         return password;
@@ -103,6 +114,7 @@ public class User
         this.password = password;
     }
 
+    @Column(name = "name")
     public String getFirstname()
     {
         return firstname;
@@ -113,6 +125,7 @@ public class User
         this.firstname = firstname;
     }
 
+    @Column(name = "lastname")
     public String getLastname()
     {
         return lastname;
@@ -123,6 +136,7 @@ public class User
         this.lastname = lastname;
     }
 
+    @Column(name = "username")
     public String getUsername()
     {
         return username;

@@ -12,8 +12,9 @@ import java.util.List;
  * @author Santiago Carrillo
  * 8/21/17.
  */
-@Service
+
 public class UserServiceImpl implements UserService {
+
 
     private List<User> users = new ArrayList<>();
 
@@ -42,27 +43,18 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getUser(long id) {
-
         for (int i = 0; i < users.size(); i++) {
-
             if (users.get(i).getId() == id) {
-
                 return users.get(i);
-
             }
-
         }
-
         return null;
     }
 
     @Override
     public User createUser(User user) {
-
         users.add(user);
-
         user.setId(users.size());
-
         return user;
     }
 
@@ -71,11 +63,8 @@ public class UserServiceImpl implements UserService {
     public User updateUser(User user, User u) {
 
         u.setImage(user.getImage());
-
         u.setPassword(user.getPassword());
-
         u.setEmail(user.getEmail());
-
         u.setFirstname(user.getFirstname());
         return u;
 
@@ -84,28 +73,19 @@ public class UserServiceImpl implements UserService {
     @Override
     public User findUserByEmail(String email) {
         for (int i = 0; i < users.size(); i++) {
-
             if (users.get(i).getEmail().trim().equalsIgnoreCase(email)) {
-
                 return users.get(i);
-
             }
-
         }
-
         return null;
     }
 
     @Override
     public User findUserById(Integer id) {
         for (int i = 0; i < users.size(); i++) {
-
             if (users.get(i).getId() == id) {
-
                 return users.get(i);
-
             }
-
         }
 
         return null;
@@ -114,16 +94,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public User findUserByEmailAndPassword(String email, String password) {
         for (int i = 0; i < users.size(); i++) {
-
             if (users.get(i).getEmail().trim().equalsIgnoreCase(email)
                     && users.get(i).getPassword().trim().equalsIgnoreCase(password)) {
-
                 return users.get(i);
-
             }
-
         }
-
         return null;
     }
 

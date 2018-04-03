@@ -15,6 +15,7 @@ public interface UserService
     User getUser( long l );
 
     User createUser( User user );
+
     public User updateUser(User user,User u);
 
     User findUserByEmail( String email );
