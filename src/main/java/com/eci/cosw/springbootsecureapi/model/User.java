@@ -4,22 +4,35 @@ package com.eci.cosw.springbootsecureapi.model;
  * @author Santiago Carrillo
  * 8/21/17.
  */
+
+
+@Entity
+@Table(name = "User")
 public class User
 {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @Column(name = "email", nullable = false)
     private String email;
 
+    @Column(name = "password", nullable = false)
     private String password;
 
+    @Column(name = "name", nullable = false)
     private String firstname;
 
+    @Column(name = "lastname", nullable = false)
     private String lastname;
 
+    @Column(name = "username", nullable = false)
     private String username;
 
+    @Column(name = "image", nullable = false)
     private String image;
+
+    @Column(name = "description", nullable = false)
     private String description;
 
 

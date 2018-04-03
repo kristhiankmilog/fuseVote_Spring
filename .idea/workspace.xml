@@ -2,59 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9226e9ae-5d43-4cc2-9bbf-72d51b73407e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0.2/fileContent/annotation-processors.bin" afterPath="$PROJECT_DIR$/.gradle/4.0.2/fileContent/annotation-processors.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0.2/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.0.2/fileContent/fileContent.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0.2/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0.2/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0.2/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0.2/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0.2/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.0.2/fileHashes/resourceHashesCache.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0.2/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.0.2/taskHistory/fileSnapshots.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0.2/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0.2/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.0.2/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0.2/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_7_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_7_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_8_5_27.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_8_5_27.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_27.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_1_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_2_13_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_5_0_3_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_5_0_3_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_5_0_3_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_5_0_3_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_5_0_3_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_5_0_3_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_test_5_0_3_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_5_0_3_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_0_3_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/inline.bundle.js" afterPath="$PROJECT_DIR$/build/resources/main/static/inline.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/inline.bundle.js.map" afterPath="$PROJECT_DIR$/build/resources/main/static/inline.bundle.js.map" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/main.bundle.js" afterPath="$PROJECT_DIR$/build/resources/main/static/main.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/main.bundle.js.map" afterPath="$PROJECT_DIR$/build/resources/main/static/main.bundle.js.map" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/polyfills.bundle.js" afterPath="$PROJECT_DIR$/build/resources/main/static/polyfills.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/styles.bundle.js" afterPath="$PROJECT_DIR$/build/resources/main/static/styles.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/styles.bundle.js.map" afterPath="$PROJECT_DIR$/build/resources/main/static/styles.bundle.js.map" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/vendor.bundle.js" afterPath="$PROJECT_DIR$/build/resources/main/static/vendor.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js.map" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js.map" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/polyfills.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/polyfills.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/styles.bundle.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/styles.bundle.js.map" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/vendor.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendor.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_core_3_9_1.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_core_3_9_0.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.0.2/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.0.2/fileContent/fileContent.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.0.2/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0.2/fileHashes/fileHashes.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.0.2/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0.2/taskHistory/taskHistory.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.0.2/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0.2/fileHashes/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.0.2/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.0.2/taskHistory/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.0.2/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.0.2/taskHistory/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_0_0_BUILD_SNAPSHOT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_0_0_BUILD_SNAPSHOT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_0_0_BUILD_SNAPSHOT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_0_0_BUILD_SNAPSHOT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_0_0_BUILD_SNAPSHOT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_BUILD_SNAPSHOT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_0_0_BUILD_SNAPSHOT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_0_0_BUILD_SNAPSHOT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/BrotherGames-Spring_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/BrotherGames-Spring_main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/BrotherGames-Spring_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/BrotherGames-Spring_test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/static/inline.bundle.js.map" afterPath="$PROJECT_DIR$/build/resources/main/static/inline.bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/static/main.bundle.js" afterPath="$PROJECT_DIR$/build/resources/main/static/main.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/static/main.bundle.js.map" afterPath="$PROJECT_DIR$/build/resources/main/static/main.bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/static/polyfills.bundle.js" afterPath="$PROJECT_DIR$/build/resources/main/static/polyfills.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/static/polyfills.bundle.js.map" afterPath="$PROJECT_DIR$/build/resources/main/static/polyfills.bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/static/styles.bundle.js" afterPath="$PROJECT_DIR$/build/resources/main/static/styles.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/static/styles.bundle.js.map" afterPath="$PROJECT_DIR$/build/resources/main/static/styles.bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/static/vendor.bundle.js.map" afterPath="$PROJECT_DIR$/build/resources/main/static/vendor.bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/polyfills.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/polyfills.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/polyfills.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/polyfills.bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/styles.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/styles.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/styles.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/styles.bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendor.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/vendor.bundle.js.map" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -76,7 +61,7 @@
       <file leaf-file-name="TodoController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/TodoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="0">
               <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
@@ -86,8 +71,8 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,19 +81,44 @@
       <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="120">
               <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="825">
+              <caret line="63" column="16" lean-forward="true" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/repositories/UsersRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersRepositoryImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/repositories/UsersRepositoryImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#231#232#0" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,7 +126,7 @@
       <file leaf-file-name="Todo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/Todo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
+            <state relative-caret-position="420">
               <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding>
                 <element signature="e#815#816#0" expanded="true" />
@@ -141,7 +151,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\Mape\.gradle\wrapper\dists\gradle-4.0.2-all\680wmhe205zg4atnbsmvvt28p\gradle-4.0.2" />
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -368,6 +378,7 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="3045530594000" />
         <entry key="$PROJECT_DIR$/build.gradle" value="3231387304" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="4169347756" />
       </map>
@@ -384,10 +395,10 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.0.0.BUILD-SNAPSHOT/a3ed521d0b83e2fcfce0f45e1f0edc7b3e68a9b1/spring-boot-gradle-plugin-2.0.0.BUILD-SNAPSHOT-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.0.0.BUILD-SNAPSHOT/7c4d3eb2ed9c7dcc04dc8b1b4fdcde0b272f8447/spring-boot-gradle-plugin-2.0.0.BUILD-SNAPSHOT.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.0.0.BUILD-SNAPSHOT/4cb21975392e9f4731201176c9307484af59c396/spring-boot-loader-tools-2.0.0.BUILD-SNAPSHOT-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.0.0.BUILD-SNAPSHOT/ed8ed7ef7b061753ef2f908c0c814c2f022fde60/spring-boot-loader-tools-2.0.0.BUILD-SNAPSHOT.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.0.0.BUILD-SNAPSHOT/3983d0694c0ae383045dac8b5f02330087d84359/spring-boot-gradle-plugin-2.0.0.BUILD-SNAPSHOT-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.0.0.BUILD-SNAPSHOT/fc88aa40a7a9cab1103a417f295a7e94d1cb50a6/spring-boot-gradle-plugin-2.0.0.BUILD-SNAPSHOT.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.0.0.BUILD-SNAPSHOT/346179dda875390358e31c6e9bf3d86760abd860/spring-boot-loader-tools-2.0.0.BUILD-SNAPSHOT-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.0.0.BUILD-SNAPSHOT/c90134f88d98cf7c12adaa137fe75e40e9ccac06/spring-boot-loader-tools-2.0.0.BUILD-SNAPSHOT.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.4.RELEASE/f56e13eea5c5d3640efb34dc0f55b1369000fe32/dependency-management-plugin-1.0.4.RELEASE-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.4.RELEASE/f5b1df47ed5f708faa4d2fe0a71eb7fd36e11696/dependency-management-plugin-1.0.4.RELEASE.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.14/43a23e357fa7b187c261520914c0b001ea1a62a2/commons-compress-1.14-sources.jar" />
@@ -407,138 +418,138 @@
               <option name="name" value="BrotherGames-Spring" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/announce" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/antlr" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/base-services" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/base-services-groovy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/build-cache-http" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/build-comparison" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/build-init" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/cli" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/code-quality" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/composite-builds" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/core" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/dependency-management" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/diagnostics" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/ear" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/ide" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/ide-native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/ide-play" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/installation-beacon" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/internal-android-performance-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/internal-integ-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/internal-performance-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/internal-testing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/ivy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/jacoco" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/javascript" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/jvm-services" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/language-groovy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/language-java" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/language-jvm" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/language-native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/language-scala" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/launcher" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/logging" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/maven" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/messaging" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/model-core" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/model-groovy" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/osgi" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/platform-base" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/platform-jvm" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/platform-native" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/platform-play" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/plugin-development" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/plugin-use" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/plugins" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/process-services" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/publish" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/reporting" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/resources" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/resources-http" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/resources-s3" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/resources-sftp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/javascript" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/scala" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/signing" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/test-kit" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/testing-base" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/testing-jvm" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/testing-native" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/tooling-api" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/tooling-api-builders" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/workers" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/internal-integ-testing" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/wrapper" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/ant-1.9.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/ant-launcher-1.9.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-base-services-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-base-services-groovy-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-cli-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-core-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-docs-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-installation-beacon-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-jvm-services-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-launcher-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-logging-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-messaging-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-model-core-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-model-groovy-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-native-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-process-services-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-resources-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-runtime-api-info-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-script-kotlin-0.9.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/test-kit" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/build-cache-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/ide-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/dependency-management" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/workers" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/composite-builds" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/installation-beacon" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/logging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/jvm-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/testing-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/language-java" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/internal-android-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/src/internal-performance-testing" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-script-kotlin-compiler-plugin-0.9.0.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-script-kotlin-tooling-builders-0.9.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-model-groovy-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-resources-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/ant-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-messaging-4.0.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-script-kotlin-tooling-models-0.9.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-tooling-api-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-wrapper-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-logging-4.0.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/groovy-all-2.4.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-announce-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-antlr-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-build-cache-http-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-build-comparison-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-build-init-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-code-quality-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-composite-builds-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-dependency-management-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-diagnostics-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-ear-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-ide-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-ide-native-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-ide-play-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-ivy-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-jacoco-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-javascript-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-language-groovy-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-language-java-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-language-jvm-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-language-native-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-language-scala-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-maven-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-osgi-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-platform-base-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-platform-jvm-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-platform-native-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-platform-play-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-plugin-development-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-plugin-use-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-plugins-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-publish-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-reporting-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-resources-http-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-resources-s3-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-resources-sftp-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-process-services-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-installation-beacon-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-base-services-groovy-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-native-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-jvm-services-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-model-core-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-docs-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/ant-launcher-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-wrapper-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-core-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-script-kotlin-0.9.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-tooling-api-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-runtime-api-info-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-cli-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-launcher-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/gradle-base-services-4.0.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-scala-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-signing-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-code-quality-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-ide-native-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-platform-play-4.0.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-test-kit-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-testing-base-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-resources-sftp-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-resources-s3-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-language-groovy-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-signing-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-plugin-use-4.0.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-testing-jvm-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-testing-native-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-tooling-api-builders-4.0.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-workers-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-dependency-management-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-language-scala-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-language-jvm-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-plugin-development-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-platform-native-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-build-cache-http-4.0.2.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-testing-base-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-resources-http-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-platform-base-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-plugins-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-antlr-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-language-native-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-ide-play-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-maven-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-reporting-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-diagnostics-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-javascript-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-tooling-api-builders-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-jacoco-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-publish-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-ivy-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-build-init-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-announce-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-ear-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-build-comparison-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-osgi-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-language-java-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-ide-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-platform-jvm-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-testing-native-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-composite-builds-4.0.2.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.0.2-all/680wmhe205zg4atnbsmvvt28p/gradle-4.0.2/lib/plugins/gradle-workers-4.0.2.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -573,6 +584,8 @@
         <option value="$PROJECT_DIR$/angular-seed/src/app/models/user.ts" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/pages/user-list-page/user-list-page.component.html" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/repositories/UsersRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/repositories/UsersRepositoryImpl.java" />
       </list>
     </option>
   </component>
@@ -582,9 +595,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="width" value="1920" />
-    <option name="height" value="527" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="959" />
+    <option name="width" value="961" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -601,16 +615,84 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="BrotherGames-Spring" type="b2602c69:ProjectViewProjectNode" />
               <item name="BrotherGames-Spring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="BrotherGames-Spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BrotherGames-Spring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BrotherGames-Spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BrotherGames-Spring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BrotherGames-Spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BrotherGames-Spring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BrotherGames-Spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BrotherGames-Spring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="tmp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BrotherGames-Spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BrotherGames-Spring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BrotherGames-Spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BrotherGames-Spring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="BrotherGames-Spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BrotherGames-Spring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BrotherGames-Spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BrotherGames-Spring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootsecureapi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BrotherGames-Spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BrotherGames-Spring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootsecureapi" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BrotherGames-Spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BrotherGames-Spring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootsecureapi" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -627,6 +709,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.eci.cosw.springbootsecureapi.repositories" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -681,6 +768,12 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -715,12 +808,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -744,38 +831,39 @@
     <option name="totallyTimeSpent" value="287000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14585519" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3477306" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2078125" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -793,10 +881,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts" />
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/common/app-data.service.ts" />
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/common/auth.service.ts" />
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/common/config/config.interface.ts" />
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -982,7 +1066,7 @@
     <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-list-page/user-list-page.component.ts" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/Todo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
+        <state relative-caret-position="420">
           <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="e#815#816#0" expanded="true" />
@@ -993,23 +1077,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/TodoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="0">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="120">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
@@ -1017,9 +1093,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="825">
+          <caret line="63" column="16" lean-forward="true" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/resources/main/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/repositories/UsersRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/repositories/UsersRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
