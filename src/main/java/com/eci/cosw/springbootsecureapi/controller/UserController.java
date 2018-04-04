@@ -5,6 +5,8 @@ import java.util.List;
 import javax.servlet.ServletException;
 
 import com.eci.cosw.springbootsecureapi.model.User;
+import com.eci.cosw.springbootsecureapi.model.Change;
+import com.eci.cosw.springbootsecureapi.model.Requests;
 import com.eci.cosw.springbootsecureapi.service.ServicesException;
 import com.eci.cosw.springbootsecureapi.service.UserService;
 
@@ -160,5 +162,32 @@ public class UserController {
             this.access_token = access_token;
         }
     }
+
+
+    @RequestMapping( value = "/changes/{email}", method = RequestMethod.GET )
+    public List<Change> getChangeList(@PathVariable(name = "email") String email){
+        return userService.getChangeList(email);
+    }
+
+    @RequestMapping( value = "/changes/{email}", method = RequestMethod.POST )
+    public Change setChange(@RequestBody Change change, @PathVariable(name = "email") String email){
+        return userService.addChange(change,email);
+    }
+
+    @RequestMapping( value = "/changes", method = RequestMethod.GET )
+    public List<Change> getAllChanges(){
+        return userService.getAllChanges();
+    }
+
+    //@RequestMapping( value = "/requests/{email}", method = RequestMethod.GET )
+    //public List<Requests> getAllRequests(@PathVariable(name = "email") String email){
+    //    return userService.getAllRequests(email);
+    //}
+
+    //@RequestMapping( value = "/requests/{email}", method = RequestMethod.POST )
+    //public Requests setRecuest(@RequestBody Requests requests, @PathVariable(name = "email") String email){
+    //    return userService.addRequests(requests,email);
+    //}
+
 
 }

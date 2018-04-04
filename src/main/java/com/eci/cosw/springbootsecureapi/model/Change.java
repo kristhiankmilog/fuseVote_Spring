@@ -1,30 +1,56 @@
 package com.eci.cosw.springbootsecureapi.model;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Entity
+@Table(name = "Changeses")
 public class Change{
 
-    private Integer id;    
+    private int id;    
     private String nameGame;    
     private String description;    
     private String image;    
     private String state;    
     private Boolean accept;
+    private List<User> users;
 
-    public Change(Integer id, String nameGame, String description, String image, String state, Boolean accept){
-	this.setId(id);
-	this.setNameGame(nameGame);
-	this.setDescription(description);
-	this.setImage(image);
-	this.setState(state);
-	this.setAccept(accept);
+    public Change(int id, String nameGame, String description, String image, String state, Boolean accept){
+	this.id=id;
+	this.nameGame=nameGame;
+	this.description=description;
+	this.image=image;
+    this.state=state;
+	this.accept=accept;
         
+        
+    }
+
+    public Change(){
         
     }
     
-    public void setId(Integer id) {
+
+   
+    public void setId(int id) {
         this.id = id;
     }
 
-    public Integer getId() {
+    @Id
+	@Column(name = "id", nullable = false)
+    public int getId() {
         return id;
     }
     
@@ -32,6 +58,7 @@ public class Change{
         this.nameGame = nameGame;
     }
 
+    @Column(name = "namegame")
     public String getNameGame() {
         return nameGame;
     }
@@ -40,6 +67,7 @@ public class Change{
         this.description = description;
     }
 
+    @Column(name = "description")
     public String getDescription() {
         return description;
     }
@@ -48,6 +76,7 @@ public class Change{
         this.image = image;
     }
 
+    @Column(name = "image")
     public String getImage() {
         return image;
     }
@@ -56,6 +85,7 @@ public class Change{
         this.state = state;
     }
 
+    @Column(name = "state")
     public String getState() {
         return state;
     }
@@ -64,7 +94,18 @@ public class Change{
         this.accept = accept;
     }
 
+    @Column(name = "accept")
     public Boolean getAccept() {
         return accept;
+    }
+
+    @ManyToMany(mappedBy="listChange",fetch= FetchType.EAGER, cascade = CascadeType.ALL)
+    @JsonIgnore
+    public List<User> getUsers(){
+        return this.users;
+    }
+
+    public void setUsers(List<User> users){
+        this.users=users;
     }
 }

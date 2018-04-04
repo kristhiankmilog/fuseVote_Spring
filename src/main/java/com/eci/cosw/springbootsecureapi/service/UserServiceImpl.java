@@ -1,6 +1,8 @@
 package com.eci.cosw.springbootsecureapi.service;
 
+import com.eci.cosw.springbootsecureapi.model.Requests;
 import com.eci.cosw.springbootsecureapi.model.User;
+import com.eci.cosw.springbootsecureapi.model.Change;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,8 +33,12 @@ public class UserServiceImpl implements UserService {
 
     {
 
-        users.add(0, new User("test@mail.com", "password", "Andres", "Perez",
-                "http://farm6.static.flickr.com/5178/5428759578_d6fb2288a4.jpg"));
+        users.add(new User(3,"test@mail.com", "password", "Andres", "Perez","pepe","http://farm6.static.flickr.com/5178/5428759578_d6fb2288a4.jpg","Student") ) ;
+        this.getUser( 3).addNewChange(new Change(1,"","","https://ugc.kn3.net/i/origin/http://www.noticiasdot.com/publicaciones/galerias/Nintendo/2007/NDS_Donkey-Kong-Jungle-Climber-wallpaper/NDS_Donkey-Kong-Jungle-Climber-wallpaper-02.jpg","",true));
+        this.getUser( 3).addNewChange(new Change(2,"","","https://ugc.kn3.net/i/origin/http://www.noticiasdot.com/publicaciones/galerias/Nintendo/2007/NDS_Donkey-Kong-Jungle-Climber-wallpaper/NDS_Donkey-Kong-Jungle-Climber-wallpaper-02.jpg","",true));
+        users.add(new User(4,"test2@mail.com", "password", "Andres", "Perez","pepe","https://psmedia.playstation.com/is/image/psmedia/uncharted-3-drakes-deception-remastered-listing-thumb-01-ps4-eu-28sep16?$Icon$","Student") ) ;
+        this.getUser( 1).addNewChange(new Change(1,"","","https://images-eu.ssl-images-amazon.com/images/I/517PZKJ78WL._SY445_.jpg","",true));
+        this.getUser( 1).addNewChange(new Change(2,"","","https://images-eu.ssl-images-amazon.com/images/I/517PZKJ78WL._SY445_.jpg","",true));
 
     }
 
@@ -107,6 +113,45 @@ public class UserServiceImpl implements UserService {
         users.add(user);
         return users.get(users.size() - 1);
 
+    }
+
+    @Override
+    public List<Change> getChangeList(String email) {
+        User tmp = this.findUserByEmail( email );
+        return tmp.getListChange();
+    }
+
+    @Override
+    public Change addChange(Change change, String email) {
+        User tmp = this.findUserByEmail( email );
+        tmp.addNewChange(change);
+        return tmp.getListChange().get(tmp.getListChange().size() - 1);
+    }
+
+    //@Override
+    //public Requests addRequests(Requests requests, String email) {
+    //    User tmp = this.findUserByEmail( email );
+    //    tmp.setRequests(requests);
+    //    return tmp.getRequests().get(tmp.getListChange().size() - 1);
+    //}
+
+    //@Override
+    //public List<Requests> getAllRequests(String email) {
+    //    User tmp = this.findUserByEmail( email );
+    //    return tmp.getRequests();
+    //}
+
+    @Override
+    public List<Change> getAllChanges(){
+        List<Change> tmp = new ArrayList<Change>();
+        for (int i = 0; i < this.getUsers().size(); i++) {
+            for (int j = 0; j < this.getUsers().get(i).getListChange().size(); j++) {
+                System.out.println(this.getUsers().get(i).getListChange().get(j));
+                tmp.add(this.getUsers().get(i).getListChange().get(j));
+
+            }
+        }
+        return tmp;
     }
 
 }
