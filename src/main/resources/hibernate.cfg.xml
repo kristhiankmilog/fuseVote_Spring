@@ -15,7 +15,12 @@
     <mapping class="com.eci.cosw.springbootsecureapi.model.User"></mapping>
     <mapping class="com.eci.cosw.springbootsecureapi.model.Todo"></mapping>
     <mapping class="com.eci.cosw.springbootsecureapi.model.Change"></mapping>
-    
+    <mapping class="com.eci.cosw.springbootsecureapi.model.Game"></mapping>
+    <mapping class="com.eci.cosw.springbootsecureapi.model.Comment"></mapping>
+    <mapping class="com.eci.cosw.springbootsecureapi.model.Seller"></mapping>
+
+
+
 
 
   </session-factory>
