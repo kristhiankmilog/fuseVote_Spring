@@ -20,8 +20,5 @@
     <mapping class="com.eci.cosw.springbootsecureapi.model.Seller"></mapping>
 
 
-
-
-
   </session-factory>
 </hibernate-configuration>

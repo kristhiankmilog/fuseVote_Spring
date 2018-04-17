@@ -61,7 +61,7 @@ public class Seller {
     }
 
     @ManyToOne(fetch= FetchType.LAZY)
-    @JoinColumn(name="IDGAME_ID")
+    @JoinColumn(name="gameId")
     public Game getIdGame() {
         return idGame;
     }

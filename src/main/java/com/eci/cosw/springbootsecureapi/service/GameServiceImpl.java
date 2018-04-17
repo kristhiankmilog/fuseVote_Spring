@@ -57,8 +57,13 @@ public class GameServiceImpl implements GameService {
 
 
     @Override
-    public void newComment(Game game1, String comment, String user, int id, int rate) {
+    public void newComment(Comment comment) {
       //  game1.setComments(comment, user,id,rate,game1);
 
+    }
+
+    @Override
+    public Game createGame(Game game) {
+        return null;
     }
 }

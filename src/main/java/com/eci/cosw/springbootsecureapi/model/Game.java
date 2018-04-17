@@ -1,27 +1,18 @@
 
 package com.eci.cosw.springbootsecureapi.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
-
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table (name="games")
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+@Table(name="games")
 public class Game implements java.io.Serializable{
     private int id;
     private int rateAcum;
     private String name;
     private String photo;
     private String description;
-
-
-
-    //private List<Game> games;
-    private List<Seller> sellers;
+    //private List<Seller> sellers;
     private List<Comment> comments;
 
     public Game(){}
@@ -33,24 +24,6 @@ public class Game implements java.io.Serializable{
         this.photo = photo;
         this.description = description;
     }
-
-    /*
-    public Game(String name, String photo, String description, int rateAcum, List<Seller> sellers, List<Comment> comments, int id) {
-        this.name = name;
-        this.photo = photo;
-        this.description = description;
-        this.rateAcum = rateAcum;
-        this.sellers = sellers;
-        this.comments = comments;
-        this.id = id;
-    }*/
-   /* public List<Game> getGames() {
-        return games;
-    }
-
-    public void setGames(List<Game> games) {
-        this.games = games;
-    }*/
 
     @Id
     @GeneratedValue
@@ -99,21 +72,19 @@ public class Game implements java.io.Serializable{
         this.rateAcum = rateAcum;
     }
 
-
-    @OneToMany(cascade=CascadeType.ALL)
-    @JoinColumn(name="GAMES_id")
-    @Fetch(FetchMode.JOIN)
+/*
+    @OneToMany(mappedBy = "idGame")
     public List<Seller> getSellers() {
         return sellers;
     }
 
-   public void setSellers(List<Seller> sellers) {
+    public void setSellers(List<Seller> sellers) {
         this.sellers = sellers;
     }
+*/
 
-    @OneToMany(cascade=CascadeType.ALL)
-    @JoinColumn(name="GAMES1_id")
-     public List<Comment> getComments() {
+    @OneToMany(mappedBy = "gameId")
+    public List<Comment> getComments() {
         return comments;
     }
 
@@ -121,5 +92,9 @@ public class Game implements java.io.Serializable{
         this.comments = comments;
     }
 
+    @Override
+    public String toString(){
+        return "Game-> id:"+Integer.toString(id);
+    }
 
 }

@@ -1,5 +1,6 @@
   package com.eci.cosw.springbootsecureapi.service;
 
+  import com.eci.cosw.springbootsecureapi.model.Comment;
   import com.eci.cosw.springbootsecureapi.model.Game;
   import com.eci.cosw.springbootsecureapi.repositories.CommentRepository;
   import com.eci.cosw.springbootsecureapi.repositories.GameRepository;
@@ -11,20 +12,16 @@
   @Service
   public class GameServiceDB implements GameService {
 
-    @Autowired
-    private GameRepository gameRepository;
+      @Autowired
+      private GameRepository gameRepository;
 
-    @Autowired
-    private CommentRepository cmrepo;
+      @Autowired
+      private CommentRepository cmrepo;
 
-
-     @Autowired
+      @Autowired
       private UserService userService;
 
-
-
       public List<Game> getAllGame() {
-
           return gameRepository.findAll();
       }
 
@@ -33,20 +30,18 @@
          return gameRepository.game(name);
       }
 
-  @Override
+      @Override
       public List<Game> getTopGame() {
-        //  List<Game> games= new ArrayList<Seller>();
-         /* for(int i=0;i<=2;i++){
-              Game g=gameRepository.getOne(i);
-              games.add(g);
-
-          }return
-*/
          return gameRepository.findAll();
       }
 
-     // @Override
-      public void newComment(Game game1, String comment, String user, int id, int rate) {
+      @Override
+      public void newComment(Comment comment) {
+          cmrepo.saveAndFlush(comment);
+      }
 
+      @Override
+      public Game createGame(Game game) {
+          return gameRepository.saveAndFlush(game);
       }
   }

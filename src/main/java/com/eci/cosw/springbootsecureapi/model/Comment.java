@@ -34,6 +34,16 @@ public class Comment {
         this.gameId = gameId;
     }
 
+    @Id
+    @Column(name = "id", nullable = false, length = 100)
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
     @Column(name = "content", nullable = false, length = 1000)
     public String getContent() {
         return content;
@@ -61,18 +71,8 @@ public class Comment {
         this.rate = rate;
     }
 
-    @Id
-    @Column(name = "id", nullable = false, length = 100)
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
     @ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name="GAMEID_ID")
+    @JoinColumn(name="gameid")
     public Game getGameId() {
         return gameId;
     }
