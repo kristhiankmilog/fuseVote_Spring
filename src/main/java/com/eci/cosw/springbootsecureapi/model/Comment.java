@@ -6,6 +6,7 @@
 package com.eci.cosw.springbootsecureapi.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 
 /**
@@ -73,6 +74,7 @@ public class Comment {
 
     @ManyToOne(fetch=FetchType.LAZY)
     @JoinColumn(name="gameid")
+    @JsonIgnore
     public Game getGameId() {
         return gameId;
     }

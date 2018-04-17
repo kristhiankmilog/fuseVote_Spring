@@ -36,10 +36,10 @@ public class GameServiceImpl implements GameService {
            }
 
     @Override
-    public Game getGame(String name) {
-        Game getGam=null;
+    public List<Game> getGame(String name) {
+        List<Game> getGam=null;
         for(int i=0;i<game.size()-1;i++){
-            if( game.get(i).getName().equals(name)) getGam= game.get(i);
+            if( game.get(i).getName().equals(name)) getGam.add(game.get(i));
 
         }
         return getGam;

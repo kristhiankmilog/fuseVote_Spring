@@ -26,7 +26,7 @@
       }
 
       @Override
-      public Game getGame(String name) {
+      public List<Game> getGame(String name) {
          return gameRepository.game(name);
       }
 
