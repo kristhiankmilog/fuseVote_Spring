@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "Changeses")
+@Table(name = "exChange")
 public class Change{
 
     private int id;    
@@ -25,15 +25,17 @@ public class Change{
     private String image;    
     private String state;    
     private Boolean accept;
+    private String user;
     private List<User> users;
 
-    public Change(int id, String nameGame, String description, String image, String state, Boolean accept){
+    public Change(int id, String nameGame, String description, String image, String state, Boolean accept,String user){
 	this.id=id;
 	this.nameGame=nameGame;
 	this.description=description;
 	this.image=image;
     this.state=state;
 	this.accept=accept;
+    this.user=user;
         
         
     }
@@ -97,6 +99,16 @@ public class Change{
     @Column(name = "accept")
     public Boolean getAccept() {
         return accept;
+    }
+
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    @Column(name = "user")
+    public String getUser() {
+        return user;
     }
 
     @ManyToMany(mappedBy="listChange",fetch= FetchType.EAGER, cascade = CascadeType.ALL)

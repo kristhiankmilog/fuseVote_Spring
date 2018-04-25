@@ -206,11 +206,11 @@ public class User {
 
     
 	@ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "USER_CHANGES",          
+    @JoinTable(name = "USER_EXCHANGES",          
             joinColumns =              
                     @JoinColumn(name="USER_email", referencedColumnName="email"),         
             inverseJoinColumns =              
-                    @JoinColumn(name="CHANGEHP_id", referencedColumnName="id")
+                    @JoinColumn(name="EXCHANGE_id", referencedColumnName="id")
     )      
     public List<Change> getListChange(){
         return this.changes;

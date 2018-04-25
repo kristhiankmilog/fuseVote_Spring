@@ -34,23 +34,27 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @CrossOrigin
     @RequestMapping(value = "/items", method = RequestMethod.GET)
     public List<User> getUsers() {
         return userService.getUsers();
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/items", method = RequestMethod.POST)
     public User setTodo(@RequestBody User user) {
         return userService.RegisterUser(user);
 
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/{email}", method = RequestMethod.GET)
 
     public User getUsersByEmail(@PathVariable("email") String email) {
         return userService.findUserByEmail(email);
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/id/{id}", method = RequestMethod.GET)
 
     public User getUsersById(@PathVariable("id") int id) {
@@ -60,6 +64,8 @@ public class UserController {
         return userService.findUserById(id);
 
     }
+
+    @CrossOrigin
     @RequestMapping( value = "/", method = RequestMethod.POST )
 
     public User setUsers(@RequestBody User user) throws ServicesException {
@@ -97,6 +103,7 @@ public class UserController {
 
     }
 
+    @CrossOrigin
     @RequestMapping(value = "/updateprofile/{id}", method = RequestMethod.POST)
 
     public User updateUser(@RequestBody User updateuser, @PathVariable("id") int id) throws ServicesException {
@@ -115,6 +122,8 @@ public class UserController {
         }
 
     }
+
+    @CrossOrigin
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public Token login(@RequestBody User login) throws ServletException {
 
@@ -164,16 +173,19 @@ public class UserController {
     }
 
 
+    @CrossOrigin
     @RequestMapping( value = "/changes/{email}", method = RequestMethod.GET )
     public List<Change> getChangeList(@PathVariable(name = "email") String email){
         return userService.getChangeList(email);
     }
 
+    @CrossOrigin
     @RequestMapping( value = "/changes/{email}", method = RequestMethod.POST )
     public Change setChange(@RequestBody Change change, @PathVariable(name = "email") String email){
         return userService.addChange(change,email);
     }
 
+    @CrossOrigin
     @RequestMapping( value = "/changes", method = RequestMethod.GET )
     public List<Change> getAllChanges(){
         return userService.getAllChanges();
