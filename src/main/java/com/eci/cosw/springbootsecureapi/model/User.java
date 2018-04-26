@@ -20,7 +20,8 @@ import org.hibernate.annotations.FetchMode;
 import java.util.ArrayList;
 import java.util.List;
 import com.eci.cosw.springbootsecureapi.model.Change;
-import com.eci.cosw.springbootsecureapi.model.Requests;
+import com.eci.cosw.springbootsecureapi.model.Exrequests;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 /**
@@ -50,8 +51,10 @@ public class User {
     private String description;
 
     private List<Change> changes ;
+    private Integer numChanges=0;
     
-    private List<Requests> requests ;
+    private List<Exrequests> exrequests ;
+    private Integer numRequest=0;
 
 
     public User()
@@ -86,9 +89,11 @@ public class User {
 
         this.changes = new ArrayList<Change>();
 
+        this.exrequests = new ArrayList<Exrequests>();
+
     }
 
-    public User(int id,String email, String password, String name,String lastname, String username, String image, String description, List<Change> changes) {
+    public User(int id,String email, String password, String name,String lastname, String username, String image, String description, List<Change> changes, List<Exrequests> exrequests) {
         
                 this.email = email;
         
@@ -107,6 +112,8 @@ public class User {
                 this.username = username;
 
                 this.changes = changes;
+
+                this.exrequests = exrequests;
         
             }
 
@@ -221,19 +228,33 @@ public class User {
     }
 
     public void addNewChange(Change newChange){
+        //this.numChanges=this.numChanges+1;
+        //newChange.setId(this.numChanges);
         this.changes.add(newChange);
     }
 
 
-    //@Fetch(FetchMode.JOIN)
-	//@OneToMany(cascade=CascadeType.ALL)        
-	//@JoinColumn(name="USER_requests")
-    //public List<Requests> getRequests() {
-    //    return requests;
-    //}
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "USER_EXREQUESTS",          
+            joinColumns =              
+                    @JoinColumn(name="USER_email", referencedColumnName="email"),         
+            inverseJoinColumns =              
+                    @JoinColumn(name="EXREQUESTS_id", referencedColumnName="id")
+    ) 
+    
+    public List<Exrequests> getExrequests() {
+        return this.exrequests;
+    }
 
-    //public void setRequests(Requests newRequests) {
-    //    this.requests.add(newRequests);
-    //}
+    public void addNewRequests(Exrequests newRequests) {
+    // aqui se le agrega el id a la solicitud
+        //this.numRequest=this.numRequest+1;
+        //newRequests.setId(this.numRequest);
+        this.exrequests.add(newRequests);
+    }
+
+    public void setExrequests(List<Exrequests> exrequests){
+        this.exrequests=exrequests;
+    }
 
 }

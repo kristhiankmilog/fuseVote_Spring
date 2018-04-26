@@ -76,7 +76,7 @@ public class Change{
     
     public void setImage(String image) {
         this.image = image;
-    }
+    } 
 
     @Column(name = "image")
     public String getImage() {

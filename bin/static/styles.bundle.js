@@ -1,9 +1,9 @@
 webpackJsonp(["styles"],{
 
-/***/ "../../../../../src/assets/images/mario.jpg":
+/***/ "../../../../../src/fondos.jpg":
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "mario.5ce84d8d049e9b204d70.jpg";
+module.exports = __webpack_require__.p + "fondos.36e5dad071a69ddfea20.jpg";
 
 /***/ }),
 
@@ -42,7 +42,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "body {\n  min-height: 75rem;\n  padding-top: 4.5rem;\n  background-image: url(" + __webpack_require__("../../../../../src/assets/images/mario.jpg") + ");\n  background: linear-gradient(to bottom, #33cc33 -15%, #66ccff 39%);\n}\n", ""]);
+exports.push([module.i, "#fondo {\n  background-image: url(" + __webpack_require__("../../../../../src/fondos.jpg") + ");\n  background-size: 25%;\n}\n", ""]);
 
 // exports
 

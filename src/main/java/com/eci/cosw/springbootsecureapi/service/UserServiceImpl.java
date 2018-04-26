@@ -1,6 +1,6 @@
 package com.eci.cosw.springbootsecureapi.service;
 
-import com.eci.cosw.springbootsecureapi.model.Requests;
+import com.eci.cosw.springbootsecureapi.model.Exrequests;
 import com.eci.cosw.springbootsecureapi.model.User;
 import com.eci.cosw.springbootsecureapi.model.Change;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -128,27 +128,28 @@ public class UserServiceImpl implements UserService {
         return tmp.getListChange().get(tmp.getListChange().size() - 1);
     }
 
-    //@Override
-    //public Requests addRequests(Requests requests, String email) {
-    //    User tmp = this.findUserByEmail( email );
-    //    tmp.setRequests(requests);
-    //    return tmp.getRequests().get(tmp.getListChange().size() - 1);
-    //}
-
-    //@Override
-    //public List<Requests> getAllRequests(String email) {
-    //    User tmp = this.findUserByEmail( email );
-    //    return tmp.getRequests();
-    //}
+    @Override
+    public Exrequests addRequests(Exrequests requests, String email) {
+        User tmp = this.findUserByEmail( email );
+        tmp.addNewRequests(requests);
+        return tmp.getExrequests().get(tmp.getListChange().size() - 1);
+    }
 
     @Override
-    public List<Change> getAllChanges(){
+    public List<Exrequests> getAllRequests(String email) {
+        User tmp = this.findUserByEmail( email );
+        return tmp.getExrequests();
+    }
+
+    @Override
+    public List<Change> getAllChanges(String emaile){
         List<Change> tmp = new ArrayList<Change>();
         for (int i = 0; i < this.getUsers().size(); i++) {
             for (int j = 0; j < this.getUsers().get(i).getListChange().size(); j++) {
                 System.out.println(this.getUsers().get(i).getListChange().get(j));
-                tmp.add(this.getUsers().get(i).getListChange().get(j));
-
+                if(this.getUsers().get(i).getEmail() != emaile){
+                    tmp.add(this.getUsers().get(i).getListChange().get(j));
+                }
             }
         }
         return tmp;

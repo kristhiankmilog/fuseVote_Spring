@@ -1,6 +1,6 @@
 package com.eci.cosw.springbootsecureapi.service;
 
-import com.eci.cosw.springbootsecureapi.model.Requests;
+import com.eci.cosw.springbootsecureapi.model.Exrequests;
 import com.eci.cosw.springbootsecureapi.model.User;
 import com.eci.cosw.springbootsecureapi.model.Change;
  import com.eci.cosw.springbootsecureapi.repositories.UserRepository;
@@ -63,12 +63,15 @@ public class UserServiceImp implements UserService{
     }
 
     @Override
-    public List<Change> getAllChanges(){
+    public List<Change> getAllChanges(String emaile){
         List<User> tmp = this.getUsers();
         List<Change> chn = new ArrayList<Change>();
         for (int i = 0; i < tmp.size(); i++) {
-            for (int j = 0; j < tmp.get(i).getListChange().size(); j++) {
-                chn.add(tmp.get(i).getListChange().get(j));
+            if(!(tmp.get(i).getEmail().equals(emaile))){
+                for (int j = 0; j < tmp.get(i).getListChange().size(); j++) {
+                    System.out.println(tmp.get(i).getEmail()+"------------------------------------------------"+emaile);
+                    chn.add(tmp.get(i).getListChange().get(j));
+                }
             }            
         }
         return chn;
@@ -83,15 +86,23 @@ public class UserServiceImp implements UserService{
         return change;
     }
 
-    //@Override
-    //public Requests addRequests(Requests requests,String email){
-    //    return null;
-    //}
+	@Override
+	public Exrequests addRequests(Exrequests requests, String email) {
+        System.out.println("--------------------se creo una nueva solicitud-----------------------------------");
+		User tmp = this.findUserByEmail( email );
+        tmp.addNewRequests(requests);
+        this.usersRepository.save(tmp);
+        return requests;
+	}
 
-    //@Override
-    //public List<Requests> getAllRequests(String email){
-    //    return usersRepository.findUserByEmail(email).getRequests();
-    //}
+	@Override
+	public List<Exrequests> getAllRequests(String email) {
+		return usersRepository.findUserByEmail(email).getExrequests();
+	}
+
+    
+
+    
 
 
 }

@@ -6,7 +6,7 @@ import javax.servlet.ServletException;
 
 import com.eci.cosw.springbootsecureapi.model.User;
 import com.eci.cosw.springbootsecureapi.model.Change;
-import com.eci.cosw.springbootsecureapi.model.Requests;
+import com.eci.cosw.springbootsecureapi.model.Exrequests;
 import com.eci.cosw.springbootsecureapi.service.ServicesException;
 import com.eci.cosw.springbootsecureapi.service.UserService;
 
@@ -186,20 +186,20 @@ public class UserController {
     }
 
     @CrossOrigin
-    @RequestMapping( value = "/changes", method = RequestMethod.GET )
-    public List<Change> getAllChanges(){
-        return userService.getAllChanges();
+    @RequestMapping( value = "/exchanges/{email}", method = RequestMethod.GET )
+    public List<Change> getAllChanges(@PathVariable(name = "email") String email){
+        return userService.getAllChanges(email);
     }
 
-    //@RequestMapping( value = "/requests/{email}", method = RequestMethod.GET )
-    //public List<Requests> getAllRequests(@PathVariable(name = "email") String email){
-    //    return userService.getAllRequests(email);
-    //}
+    @RequestMapping( value = "/requests/{email}", method = RequestMethod.GET )
+    public List<Exrequests> getAllRequests(@PathVariable(name = "email") String email){
+        return userService.getAllRequests(email);
+    }
 
-    //@RequestMapping( value = "/requests/{email}", method = RequestMethod.POST )
-    //public Requests setRecuest(@RequestBody Requests requests, @PathVariable(name = "email") String email){
-    //    return userService.addRequests(requests,email);
-    //}
+    @RequestMapping( value = "/requests/{email}", method = RequestMethod.POST )
+    public Exrequests setRecuest(@RequestBody Exrequests requests, @PathVariable(name = "email") String email){
+        return userService.addRequests(requests,email);
+    }
 
 
 }
