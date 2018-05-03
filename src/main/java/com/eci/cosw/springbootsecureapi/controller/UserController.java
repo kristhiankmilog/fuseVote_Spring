@@ -191,14 +191,18 @@ public class UserController {
         return userService.getAllChanges(email);
     }
 
-    @RequestMapping( value = "/requests/{email}", method = RequestMethod.GET )
-    public List<Exrequests> getAllRequests(@PathVariable(name = "email") String email){
-        return userService.getAllRequests(email);
+    @CrossOrigin
+    @RequestMapping( value = "/exrequests/{email}", method = RequestMethod.GET )
+    public List<Exrequests> getAllExrequests(@PathVariable(name = "email") String email){
+        System.out.println("----------------------hace solicitud----------------------");
+        return userService.getAllExrequests(email);
     }
 
-    @RequestMapping( value = "/requests/{email}", method = RequestMethod.POST )
-    public Exrequests setRecuest(@RequestBody Exrequests requests, @PathVariable(name = "email") String email){
-        return userService.addRequests(requests,email);
+    @CrossOrigin
+    @RequestMapping( value = "/exrequests/{email}", method = RequestMethod.POST )
+    public Exrequests setExrecuest(@RequestBody Exrequests requestis, @PathVariable(name = "email") String email){
+        System.out.println("----------------------hace solicitud****************************");
+        return userService.addExrequests(requestis,email);
     }
 
 

@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse\">\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n  <a class=\"navbar-brand\" href=\"#\">BrotherGames</a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">Home</a>\n      </li>\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/profile\" routerLink=\"/profile\">Profile</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/searchGames\" routerLink=\"/searchGames\">Games <span class=\"sr-only\">(current)</span></a>\n      </li>\n      \n        <a class=\"nav-link\" routerLinkActive=\"/listChanges\" routerLink=\"/listChanges\">List Games Exchange</a>\n      \n        <a class=\"nav-link\" routerLinkActive=\"/editChanges\" routerLink=\"/editChanges\">Edit Games Exchange</a>\n      \n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/listexChanges\" routerLink=\"/listexChanges\">Games Exchange</a>\n      </li>\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a href=\"#\" class=\"nav-link\" (click)=\"signOut()\">(Sign Out)</a>\n      </li>\n      </ul>\n\n      <form class=\"form-inline my-2 my-lg-0\">\n        <ul class=\"navbar-nav mr-auto\">\n\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\n            <button id=\"boton\"  routerLinkActive=\"/register\" routerLink=\"/register\">Register<span class=\"sr-only\">(current)</span></button>\n          </li>\n\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\n            <button id=\"boton\" routerLinkActive=\"/signin\" routerLink=\"/signin\">Sign In<span class=\"sr-only\">(current)</span></button>\n          </li>\n\n        </ul>\n    </form>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n  <router-outlet></router-outlet>\n</div>"
+module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse\">\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n  <a class=\"navbar-brand\" href=\"#\">BrotherGames</a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">Home</a>\n      </li>\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/profile\" routerLink=\"/profile\">Profile</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/searchGames\" routerLink=\"/searchGames\">Games <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/listChanges\" routerLink=\"/listChanges\">My Exchanges</a>\n      </li>\n      \n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/listexChanges\" routerLink=\"/listexChanges\">All Exchanges</a>\n      </li>\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a href=\"#\" class=\"nav-link\" (click)=\"signOut()\">(Sign Out)</a>\n      </li>\n      </ul>\n\n      <form class=\"form-inline my-2 my-lg-0\">\n        <ul class=\"navbar-nav mr-auto\">\n\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\n            <button id=\"boton\"  routerLinkActive=\"/register\" routerLink=\"/register\">Register<span class=\"sr-only\">(current)</span></button>\n          </li>\n\n          <li *ngIf=\"!isLoggedIn()\" class=\"nav-item active\">\n            <button id=\"boton\" routerLinkActive=\"/signin\" routerLink=\"/signin\">Sign In<span class=\"sr-only\">(current)</span></button>\n          </li>\n\n        </ul>\n    </form>\n\n  </div>\n</nav>\n\n<div class=\"container\">\n  <router-outlet></router-outlet>\n</div>"
 
 /***/ }),
 
@@ -537,7 +537,7 @@ var INITIAL_CONFIG = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Inje
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Change; });
 var Change = (function () {
-    function Change(id, nameGame, description, image, state, accept, user) {
+    function Change(id, nameGame, description, image, state, accept, user, datep) {
         this.id = id;
         this.nameGame = nameGame;
         this.description = description;
@@ -545,6 +545,7 @@ var Change = (function () {
         this.state = state;
         this.accept = accept;
         this.user = user;
+        this.datep = datep;
     }
     return Change;
 }());
@@ -588,6 +589,27 @@ var DescriptionGame = (function () {
 }());
 
 //# sourceMappingURL=description.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/models/exrequests.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Exrequests; });
+var Exrequests = (function () {
+    function Exrequests(id, userRq, change1Game, change1, change2) {
+        this.id = id;
+        this.userRq = userRq;
+        this.change1Game = change1Game;
+        this.change1 = change1;
+        this.change2 = change2;
+        this.state = "Pending";
+    }
+    return Exrequests;
+}());
+
+//# sourceMappingURL=exrequests.js.map
 
 /***/ }),
 
@@ -763,6 +785,7 @@ var ChangeEditPageComponent = (function () {
     };
     ChangeEditPageComponent.prototype.onSubmit = function () {
         var _this = this;
+        window.alert("Congratulations, You have successfully added a game!");
         this.usersService.createChange(this.changeForm.get('nameGame').value, this.changeForm.get('description').value, this.changeForm.get('image').value, this.changeForm.get('state').value, Boolean(this.changeForm.get('accept').value)).subscribe(function (serverResponse) {
             _this.router.navigate(['/listChanges']);
         }, function (error) {
@@ -794,7 +817,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".container{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(120, 120, 122, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: center;\n}\n\n#centerbrand{\n    position: relative;\n    width: 300px;\n    height: 100px;\n}\n\n#tabla{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(0, 0, 0, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: center;\n}\n", ""]);
+exports.push([module.i, ".container{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(120, 120, 122, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: center;\n}\n\n#centerbrand{\n    position: relative;\n    width: 300px;\n    height: 100px;\n}\n\n#tabla{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(0, 0, 0, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: center;\n}\n\n#tochange{\n    border: none;\n    content:'';\n    position: unset;\n    \n    \n    color: #ffffff;\n    height: 42px;\n    background: rgba(28, 28, 29, 0.788);\n    border-radius: 5px;\n    transition: all 2s ease;\n   }\n\n#tochange:hover {\n    background: rgb(0, 0, 0);\n    color: rgba(255, 255, 255, 0.788);\n    box-shadow: inset 0 0 0 3px rgba(168, 169, 172, 0.788);\n   }\n\n#forchange{\n    border: none;\n    content:'';\n    position: unset;\n    \n    \n    color: #000000;\n    height: 42px;\n    background: rgba(255, 255, 255, 0.788);\n    border-radius: 5px;\n    transition: all 2s ease;\n   }\n\n#forchange:hover {\n    background: rgb(0, 0, 0);\n    color: rgba(255, 255, 255, 0.788);\n    box-shadow: inset 0 0 0 3px rgba(168, 169, 172, 0.788);\n   }\n\n#newExc{\n    position: absolute;\n    top:  125px; \n    right:  75px;\n}\n\nh2{\n    position: absolute;\n    top:  125px; \n    left:  450px;\n}", ""]);
 
 // exports
 
@@ -807,7 +830,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/change-list-page/change-list-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div>\n    <div id=\"centerbrand\">\n        <img id=\"brand\"  src=\"/assets/images/videojuegos.jpeg\" width=\"170\" height=\"100\">\n        \n        \n    </div>\n    <h2>My Exchanges</h2>\n    <br>\n    \n  </div>\n\n  <div>\n    <table id=\"tabla\" class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>Id</th>\n        <th>Name Game</th>\n        <th>Description</th>\n        <th>Image</th>\n        <th>State</th>\n      </tr>\n    </thead>\n    <tr *ngFor=\"let change of changes\">\n      <td >{{change.id}}</td>\n      <td >{{change.nameGame}}</td>\n      <td >{{change.description}}</td>\n      <td ><img [src]=\"change.image\" width=\"150\" height=\"150\" /></td>\n      <td >{{change.state}}</td>\n    </tr>\n    </table>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div>\n    <div id=\"centerbrand\">\n        <img id=\"brand\"  src=\"/assets/images/videojuegos.jpeg\" width=\"170\" height=\"100\">\n        \n        \n    </div>\n    <div id=\"newExc\"> \n      <button (click)=\"newExchange($event)\" id=\"forchange\" type=\"submit\" class=\"btn btn-success\" value=\"{{change.user}},{{change.nameGame}},{{change.image}}\" >New Exchange</button>\n    </div>\n    <h2>My Exchanges</h2>\n    <br>\n    \n  </div>\n\n  <div>\n    <table id=\"tabla\" class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>Date</th>\n        <th>Name Game</th>\n        <th>Description</th>\n        <th>Image</th>\n        <th>State</th>\n      </tr>\n    </thead>\n    <tr *ngFor=\"let change of changes\">\n      <td >{{change.datep | date:'dd-MM-yyyy'}}</td>\n      <td >{{change.nameGame}}</td>\n      <td >{{change.description}}</td>\n      <td ><img [src]=\"change.image\" width=\"150\" height=\"150\" /></td>\n      <td >{{change.state}}</td>\n    </tr>\n    </table>\n  </div>\n\n  <div>\n    <table id=\"tabla\" class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>User</th>\n        <th>Game to Change</th>\n        <th>Image</th>\n        <th>Your Game</th>\n        <th>State Request</th>\n      </tr>\n    </thead>\n    <tr *ngFor=\"let requests of listRequests\">\n      <td >{{requests.userRq}}</td>\n      <td >{{requests.change1Game}}</td>\n      <td ><img [src]=\"requests.change1\" width=\"150\" height=\"150\" /></td>\n      <td ><img [src]=\"requests.change2\" width=\"150\" height=\"150\" /></td>\n      <td >{{requests.state}}</td>\n      <td><button (click)=\"myEvent($event)\" id=\"tochange\" type=\"submit\" class=\"btn btn-success\" value=\"{{change.user}},{{change.nameGame}},{{change.image}}\" >Exchange</button></td>\n    </tr>\n    </table>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -843,9 +866,12 @@ var ChangeListPageComponent = (function () {
         this.usersService.listChanges().subscribe(function (userResponse) {
             _this.changes = userResponse;
         });
-        //this.usersService.listRequests().subscribe(userResponse => {
-        //this.listRequests = userResponse;
-        //  })
+        this.usersService.listRequests().subscribe(function (userResponse) {
+            _this.listRequests = userResponse;
+        });
+    };
+    ChangeListPageComponent.prototype.newExchange = function (event) {
+        this.router.navigate(['/editChanges']);
     };
     return ChangeListPageComponent;
 }());
@@ -866,7 +892,7 @@ var _a, _b;
 /***/ "../../../../../src/app/pages/change-list-page/changeOk-list-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <div>\n      <div id=\"centerbrand\">\n          <img id=\"brand\"  src=\"/assets/images/videojuegos.jpeg\" width=\"170\" height=\"100\">\n          \n          \n      </div>\n      <h2>My Exchanges</h2>\n      <br>\n      \n    </div>\n  \n    <div>\n      <table id=\"tabla\" class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>nameGame</th>\n          <th>description</th>\n          <th>image</th>\n          <th>Add</th>\n        </tr>\n      </thead>\n      <tr *ngFor=\"let change of changes\">\n        <td>{{change.nameGame}}</td>\n        <td>{{change.description}}</td>\n        <td><img [src]=\"change.image\" width=\"150\" height=\"150\" /></td>\n        <td><button (click)=\"myEvent($event)\" type=\"submit\" class=\"btn btn-success\">Exchange</button></td>\n      </tr>\n    </table>\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\n    <div>\n      <div id=\"centerbrand\">\n          <img id=\"brand\"  src=\"/assets/images/videojuegos.jpeg\" width=\"170\" height=\"100\">\n          \n          \n      </div>\n      <h2>Select Your Exchange</h2>\n      <br>\n      \n    </div>\n  \n    <div>\n      <table id=\"tabla\" class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>nameGame</th>\n          <th>description</th>\n          <th>image</th>\n          <th>Add</th>\n        </tr>\n      </thead>\n      <tr *ngFor=\"let change2 of changes2\">\n        <td>{{change2.nameGame}}</td>\n        <td>{{change2.description}}</td>\n        <td><img [src]=\"change2.image\" width=\"150\" height=\"150\" /></td>\n        <td><button (click)=\"myEvent($event)\" id=\"forchange\" type=\"submit\" class=\"btn btn-success\" value=\"{{change2.user}},{{change2.nameGame}},{{change2.image}}\" >Exchange</button></td>\n      </tr>\n    </table>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -894,18 +920,21 @@ var ChangeOkListPageComponent = (function () {
     function ChangeOkListPageComponent(usersService, router) {
         this.usersService = usersService;
         this.router = router;
-        this.changes = [];
+        this.changes2 = [];
     }
     ChangeOkListPageComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.usersService.listChanges().subscribe(function (userResponse) {
-            _this.changes = userResponse;
+            _this.changes2 = userResponse;
         });
     };
-    ChangeOkListPageComponent.prototype.createRequest = function (change1) {
-        this.change1 = change1;
-    };
     ChangeOkListPageComponent.prototype.myEvent = function (event) {
+        this.change1 = document.getElementById("forchange").value;
+        sessionStorage.setItem("forchange", this.change1);
+        this.request1 = sessionStorage.getItem("tochange").split(",");
+        console.log(this.request1[0]);
+        this.request2 = sessionStorage.getItem("forchange").split(",");
+        console.log(this.request2[0]);
         this.router.navigate(['/code']);
     };
     return ChangeOkListPageComponent;
@@ -932,7 +961,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".container{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(120, 120, 122, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: center;\n}\n\nh2{\n    position: absolute;\n    top:  125px; \n    left:  450px;\n}\n\n#tochange{\n    border: none;\n    content:'';\n    position: absolute;\n    top:  300px; \n    right:  -130px;    \n    color: #ffffff;\n    height: 200px;\n    background: rgb(0, 0, 0);\n    border-radius: 5px;\n    transition: all 2s ease;\n   }\n\n#tochange:hover {\n    background: rgb(255, 255, 255);\n    color: rgba(0, 0, 0, 0.788);\n    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.788);\n}\n\n#tabla{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(0, 0, 0, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: center;\n}", ""]);
 
 // exports
 
@@ -945,7 +974,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/code-accept-page/code-accept-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Code Accept</h1>\n<br>\n<br>\n<img src=\"/assets/images/QR.png\" width=\"150\" height=\"150\" />\n<br>\n<br>\n<p>This QR code is to confirm the transaction, and to make a claim.</p>\n<br>\n<br>\n<button (click)=\"myEvent($event)\" type=\"submit\" class=\"btn btn-success\">Accept</button>\n"
+module.exports = "\n<br>\n<div class=\"container\">\n    <p for=\"toChange\"><b>To change:</b></p>\n    <table id=\"tabla\" class=\"table table-bordered\">\n            <thead>\n                <tr>\n                <th>User</th>\n                <th>Name Game</th>\n                <th>image</th>\n                \n                </tr>\n            </thead>\n            <tr>\n                <td>{{request1[0]}}</td>\n                <td>{{request1[1]}}</td>\n                <td><img [src]=\"request1[2]\" width=\"75\" height=\"75\" /></td>\n                \n            </tr>\n        </table>\n</div>\n<br>\n\n<div class=\"container\">\n    <p for=\"toChange\"><b>For change:</b></p>\n    <table id=\"tabla\" class=\"table table-bordered\">\n        <thead>\n            <tr>\n            <th>User</th>\n            <th>Name Game</th>\n            <th>image</th>\n            \n            </tr>\n        </thead>\n        <tr>\n            <td>{{request2[0]}}</td>\n            <td>{{request2[1]}}</td>\n            <td><img [src]=\"request2[2]\" width=\"75\" height=\"75\" /></td>\n            \n        </tr>\n    </table>   \n</div>\n<br>\n<br>\n<button id=\"tochange\" (click)=\"acceptR($event)\" type=\"submit\">Accept</button>\n"
 
 /***/ }),
 
@@ -956,6 +985,7 @@ module.exports = "<h1>Code Accept</h1>\n<br>\n<br>\n<img src=\"/assets/images/QR
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CodeAcceptPageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -967,14 +997,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var CodeAcceptPageComponent = (function () {
-    function CodeAcceptPageComponent(router) {
+    function CodeAcceptPageComponent(usersService, router) {
+        this.usersService = usersService;
         this.router = router;
+        this.description = "esto es una prueba";
     }
     CodeAcceptPageComponent.prototype.ngOnInit = function () {
+        this.request1 = sessionStorage.getItem("tochange").split(",");
+        console.log(this.request1[0]);
+        this.request2 = sessionStorage.getItem("forchange").split(",");
+        console.log(this.request2[0]);
     };
-    CodeAcceptPageComponent.prototype.myEvent = function (event) {
-        this.router.navigate(['/listexChanges']);
+    CodeAcceptPageComponent.prototype.createExrequest = function () {
+        console.log("se pulso boton *-*-*-*-*-*-*-*-*-*-*-");
+        this.usersService.createExrequests(this.request1[0], this.request1[1], this.request1[2], this.request2[2]);
+    };
+    CodeAcceptPageComponent.prototype.acceptR = function (event) {
+        this.createExrequest();
+        this.router.navigate(['/listChanges']);
     };
     return CodeAcceptPageComponent;
 }());
@@ -984,10 +1026,10 @@ CodeAcceptPageComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/pages/code-accept-page/code-accept-page.component.html"),
         styles: [__webpack_require__("../../../../../src/app/pages/code-accept-page/code-accept-page.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_users_service__["a" /* UsersService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _b || Object])
 ], CodeAcceptPageComponent);
 
-var _a;
+var _a, _b;
 //# sourceMappingURL=code-accept-page.component.js.map
 
 /***/ }),
@@ -1289,7 +1331,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".container{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(120, 120, 122, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: center;\n}\n\n#centerbrand{\n    position: relative;\n    width: 300px;\n    height: 100px;\n}\n\n#tabla{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(0, 0, 0, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: center;\n}", ""]);
+exports.push([module.i, ".container{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(120, 120, 122, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: center;\n}\n\n#centerbrand{\n    position: relative;\n    width: 300px;\n    height: 100px;\n}\n\n#tabla{\n    position: relative;\n    \n    -ms-flex-line-pack: center;\n    \n        align-content: center;\n    background-color: rgba(0, 0, 0, 0.788);\n    color: rgb(255, 255, 255);\n    padding: 80px 25px;\n    font-family: 'fantasy';\n    text-align: center;\n}\n\n#tochange{\n    border: none;\n    content:'';\n    position: unset;\n    \n    \n    color: #000000;\n    height: 42px;\n    background: rgba(255, 255, 255, 0.788);\n    border-radius: 5px;\n    transition: all 2s ease;\n   }\n\n#tochange:hover {\n    background: rgb(0, 0, 0);\n    color: rgba(255, 255, 255, 0.788);\n    box-shadow: inset 0 0 0 3px rgba(168, 169, 172, 0.788);\n}\n\n\nh2{\n    position: absolute;\n    top:  125px; \n    left:  450px;\n}", ""]);
 
 // exports
 
@@ -1302,7 +1344,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/exchange-list-page/exchange-list-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <div>\n      <div id=\"centerbrand\">\n          <img id=\"brand\"  src=\"/assets/images/videojuegos.jpeg\" width=\"170\" height=\"100\">\n          \n          \n      </div>\n      <h2>All Exchanges</h2>\n      <br>\n      \n    </div>\n  \n  <div>\n    <table id=\"tabla\" class=\"table table-bordered\">\n    <thead>\n      <tr>\n          <th>User</th>\n        <th>Name Game</th>\n        <th>Description</th>\n        <th>Image</th>\n      </tr>\n    </thead>\n    <tr *ngFor=\"let change of exchanges\">\n        <td>{{change.user}}</td>\n        <td>{{change.nameGame}}</td>\n        <td>{{change.description}}</td>\n        <td><img [src]=\"change.image\" width=\"150\" height=\"150\" /></td>\n        <td><button (click)=\"myEvent($event)\" type=\"submit\" class=\"btn btn-success\" value=\"change\">Exchange</button></td>\n    </tr>\n    </table>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\n    <div>\n      <div id=\"centerbrand\">\n          <img id=\"brand\"  src=\"/assets/images/videojuegos.jpeg\" width=\"170\" height=\"100\">\n          \n          \n      </div>\n      <h2>All Exchanges</h2>\n      <br>\n      \n    </div>\n  \n  <div>\n    <table id=\"tabla\" class=\"table table-bordered\">\n    <thead>\n      <tr>\n          <th>User</th>\n        <th>Name Game</th>\n        <th>Description</th>\n        <th>Image</th>\n      </tr>\n    </thead>\n    <tr *ngFor=\"let change of exchanges\">\n        <td>{{change.user}}</td>\n        <td>{{change.nameGame}}</td>\n        <td>{{change.description}}</td>\n        <td><img [src]=\"change.image\" width=\"150\" height=\"150\" /></td>\n        <td><button (click)=\"myEvent($event)\" id=\"tochange\" type=\"submit\" class=\"btn btn-success\" value=\"{{change.user}},{{change.nameGame}},{{change.image}}\" >Exchange</button></td>\n    </tr>\n    </table>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1338,7 +1380,11 @@ var ExchangeListComponent = (function () {
             _this.exchanges = userResponse;
         });
     };
-    ExchangeListComponent.prototype.myEvent = function (event, change) {
+    ExchangeListComponent.prototype.myEvent = function (event) {
+        this.change1 = document.getElementById("tochange").value;
+        sessionStorage.setItem("tochange", this.change1);
+        this.change3 = sessionStorage.getItem("tochange").split(",");
+        console.log(this.change3[0]);
         this.router.navigate(['/okChanges']);
     };
     return ExchangeListComponent;
@@ -2173,6 +2219,7 @@ TodoService = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/add/observable/of.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_observable_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_change__ = __webpack_require__("../../../../../src/app/models/change.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_exrequests__ = __webpack_require__("../../../../../src/app/models/exrequests.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2200,6 +2247,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var UsersService = (function (_super) {
     __extends(UsersService, _super);
     function UsersService(config, authService, http) {
@@ -2208,6 +2256,7 @@ var UsersService = (function (_super) {
         _this.authService = authService;
         _this.http = http;
         _this.cont = 0;
+        _this.contr = 0;
         _this.changes = [];
         _this.users = [
             // tslint:disable-next-line:max-line-length
@@ -2258,10 +2307,19 @@ var UsersService = (function (_super) {
     };
     UsersService.prototype.createChange = function (value0, value1, value2, value3, bool) {
         this.cont += 1;
-        return this.post('user/changes/' + sessionStorage.getItem("email"), new __WEBPACK_IMPORTED_MODULE_7__models_change__["a" /* Change */](this.cont, value0, value1, value2, value3, bool, sessionStorage.getItem("email")));
+        var Currentdates = new Date();
+        return this.post('user/changes/' + sessionStorage.getItem("email"), new __WEBPACK_IMPORTED_MODULE_7__models_change__["a" /* Change */](this.cont, value0, value1, value2, value3, bool, sessionStorage.getItem("email"), Currentdates));
     };
     UsersService.prototype.listAllChanges = function () {
-        return this.get('user/changes');
+        return this.get('user/exchanges/' + sessionStorage.getItem("email"));
+    };
+    UsersService.prototype.createExrequests = function (userRq, change1Game, change1, change2) {
+        console.log("" + userRq + change1Game + change1 + change2 + "Entro hacer request ************************");
+        this.contr += 1;
+        return this.post('user/exrequests/' + sessionStorage.getItem("email"), new __WEBPACK_IMPORTED_MODULE_8__models_exrequests__["a" /* Exrequests */](this.contr, userRq, change1Game, change1, change2));
+    };
+    UsersService.prototype.listRequests = function () {
+        return this.get('user/exrequests/' + sessionStorage.getItem("email"));
     };
     return UsersService;
 }(__WEBPACK_IMPORTED_MODULE_1__common_api_service__["a" /* APIService */]));

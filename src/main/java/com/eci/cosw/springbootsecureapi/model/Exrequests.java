@@ -112,7 +112,7 @@ public class Exrequests {
         this.state = state;
     }
 
-    @ManyToMany(mappedBy="exrequests",fetch= FetchType.EAGER)
+    @ManyToMany(mappedBy="exrequests",fetch= FetchType.EAGER, cascade = CascadeType.ALL)
     @JsonIgnore
     public List<User> getUsers(){
         return this.users;

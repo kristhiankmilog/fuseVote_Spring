@@ -13,6 +13,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -27,8 +28,9 @@ public class Change{
     private Boolean accept;
     private String user;
     private List<User> users;
+    private Date datep;
 
-    public Change(int id, String nameGame, String description, String image, String state, Boolean accept,String user){
+    public Change(int id, String nameGame, String description, String image, String state, Boolean accept,String user, Date datep){
 	this.id=id;
 	this.nameGame=nameGame;
 	this.description=description;
@@ -119,5 +121,14 @@ public class Change{
 
     public void setUsers(List<User> users){
         this.users=users;
+    }
+
+    public void setDatep(Date datep) {
+        this.datep = datep;
+    }
+
+    @Column(name = "datep")
+    public Date getDatep() {
+        return this.datep;
     }
 }

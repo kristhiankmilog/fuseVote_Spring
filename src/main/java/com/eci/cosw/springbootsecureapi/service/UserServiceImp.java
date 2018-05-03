@@ -87,7 +87,7 @@ public class UserServiceImp implements UserService{
     }
 
 	@Override
-	public Exrequests addRequests(Exrequests requests, String email) {
+	public Exrequests addExrequests(Exrequests requests, String email) {
         System.out.println("--------------------se creo una nueva solicitud-----------------------------------");
 		User tmp = this.findUserByEmail( email );
         tmp.addNewRequests(requests);
@@ -96,7 +96,7 @@ public class UserServiceImp implements UserService{
 	}
 
 	@Override
-	public List<Exrequests> getAllRequests(String email) {
+	public List<Exrequests> getAllExrequests(String email) {
 		return usersRepository.findUserByEmail(email).getExrequests();
 	}
 

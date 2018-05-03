@@ -33,7 +33,7 @@ public interface UserService
 
     Change addChange(Change change,String email);
 
-    Exrequests addRequests(Exrequests requests,String email);
+    Exrequests addExrequests(Exrequests requests,String email);
     
-    List<Exrequests> getAllRequests(String email);
+    List<Exrequests> getAllExrequests(String email);
 }

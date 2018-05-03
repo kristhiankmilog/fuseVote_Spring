@@ -34,11 +34,7 @@ public class UserServiceImpl implements UserService {
     {
 
         users.add(new User(3,"test@mail.com", "password", "Andres", "Perez","pepe","http://farm6.static.flickr.com/5178/5428759578_d6fb2288a4.jpg","Student") ) ;
-        this.getUser( 3).addNewChange(new Change(1,"","","https://ugc.kn3.net/i/origin/http://www.noticiasdot.com/publicaciones/galerias/Nintendo/2007/NDS_Donkey-Kong-Jungle-Climber-wallpaper/NDS_Donkey-Kong-Jungle-Climber-wallpaper-02.jpg","",true,"test@mail.com"));
-        this.getUser( 3).addNewChange(new Change(2,"","","https://ugc.kn3.net/i/origin/http://www.noticiasdot.com/publicaciones/galerias/Nintendo/2007/NDS_Donkey-Kong-Jungle-Climber-wallpaper/NDS_Donkey-Kong-Jungle-Climber-wallpaper-02.jpg","",true,"test@mail.com"));
-        users.add(new User(4,"test2@mail.com", "password", "Andres", "Perez","pepe","https://psmedia.playstation.com/is/image/psmedia/uncharted-3-drakes-deception-remastered-listing-thumb-01-ps4-eu-28sep16?$Icon$","Student") ) ;
-        this.getUser( 1).addNewChange(new Change(1,"","","https://images-eu.ssl-images-amazon.com/images/I/517PZKJ78WL._SY445_.jpg","",true,"test2@mail.com"));
-        this.getUser( 1).addNewChange(new Change(2,"","","https://images-eu.ssl-images-amazon.com/images/I/517PZKJ78WL._SY445_.jpg","",true,"test2@mail.com"));
+        
 
     }
 
@@ -129,14 +125,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Exrequests addRequests(Exrequests requests, String email) {
+    public Exrequests addExrequests(Exrequests requests, String email) {
         User tmp = this.findUserByEmail( email );
         tmp.addNewRequests(requests);
         return tmp.getExrequests().get(tmp.getListChange().size() - 1);
     }
 
     @Override
-    public List<Exrequests> getAllRequests(String email) {
+    public List<Exrequests> getAllExrequests(String email) {
         User tmp = this.findUserByEmail( email );
         return tmp.getExrequests();
     }
