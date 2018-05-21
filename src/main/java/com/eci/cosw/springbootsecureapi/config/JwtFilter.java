@@ -14,8 +14,8 @@ import java.io.IOException;
 import java.security.SignatureException;
 
 /**
- * @author Santiago Carrillo
- * 8/21/17.
+ * @author kristhian gomez
+ * 17/8/18.
  */
 public class JwtFilter
     extends GenericFilterBean

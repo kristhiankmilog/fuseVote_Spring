@@ -20,132 +20,87 @@ import org.hibernate.annotations.FetchMode;
 import java.util.ArrayList;
 import java.util.List;
 import com.eci.cosw.springbootsecureapi.model.Change;
-import com.eci.cosw.springbootsecureapi.model.Exrequests;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 /**
- * @author Santiago Carrillo
- * 8/21/17.
+ * @author Kristhian Gomez
+ * 17/5/18.
  */
 
 
 @Entity
-@Table(name = "User")
+@Table(name = "UserVote")
 public class User {
 
     private int  id;
-
-    private String email;
-
-    private String password;
 
     private String firstname;
 
     private String lastname;
 
-    private String username;
+    private String email;
 
-    private String image;
+    private String password;
 
-    private String description;
+    private String borndate;
 
-    private List<Change> changes ;
+    private boolean statevote;
+
+    private List<Change> changes;
     private Integer numChanges=0;
-    
-    private List<Exrequests> exrequests ;
-    private Integer numRequest=0;
-
 
     public User()
     {
     }
 
-    public User( String email, String password, String firstname, String lastname, String image )
+    public User(int id, String email, String password, String firstname, String lastname, String borndate)
     {
-        this.email = email;
-        this.password = password;
+        this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
-        this.image = image;
-    }
-    public User(int id,String email, String password, String name,String lastname, String username, String image, String description) {
-
         this.email = email;
-
         this.password = password;
+        this.borndate = borndate;
+        this.statevote = false;         
+        
+    }
+    public User(int id, String email, String password, String firstname, String lastname, String borndate, boolean statevote ) {
 
-        this.image = image;
-
-        this.firstname = name;
-
-        this.id=id;
-
+        this.id = id;
+        this.firstname = firstname;
         this.lastname = lastname;
-
-        this.description = description;
-
-        this.username = username;
-
+        this.email = email;
+        this.password = password;
+        this.borndate = borndate;
+        this.statevote = statevote; 
         this.changes = new ArrayList<Change>();
 
-        this.exrequests = new ArrayList<Exrequests>();
+        
 
     }
 
-    public User(int id,String email, String password, String name,String lastname, String username, String image, String description, List<Change> changes, List<Exrequests> exrequests) {
+    public User(int id, String email, String password, String firstname, String lastname, String borndate, boolean statevote, List<Change> changes) {
         
-                this.email = email;
-        
-                this.password = password;
-        
-                this.image = image;
-        
-                this.firstname = name;
-        
-                this.id=id;
-        
-                this.lastname = lastname;
-        
-                this.description = description;
-        
-                this.username = username;
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.email = email;
+        this.password = password;
+        this.borndate = borndate;
+        this.statevote = statevote; 
+        this.changes = changes;
 
-                this.changes = changes;
-
-                this.exrequests = exrequests;
+                
         
-            }
+        }
 
-
-
-    @Column(name = "description")
-    public String getDescription()
-    {
-        return description;
-    }
-
-    public void setDescription( String description )
-    {
-        this.description = description;
-    }
 
 
     @Column(name = "id")
     public int getId(){ return id; }
 
     public void setId(int id ){ this.id = id; }
-
-    @Column(name = "image")
-    public String getImage()
-    {
-        return image;
-    }
-
-    public void setImage( String image )
-    {
-        this.image = image;
-    }
 
     @Id
     @Column(name = "email",unique = true)
@@ -170,7 +125,7 @@ public class User {
         this.password = password;
     }
 
-    @Column(name = "name")
+    @Column(name = "firstname")
     public String getFirstname()
     {
         return firstname;
@@ -192,30 +147,41 @@ public class User {
         this.lastname = lastname;
     }
 
-    @Column(name = "username")
-    public String getUsername()
+    @Column(name = "bornDate")
+    public String getbornDate()
     {
-        return username;
+        return borndate;
     }
 
-    public void setUsername( String username )
+    public void setbornDate( String bornDate )
     {
-        this.username = username;
+        this.borndate = bornDate;
+    }
+
+    @Column(name = "stateVote")
+    public boolean getstateVote()
+    {
+        return statevote;
+    }
+
+    public void setstateVote( boolean stateVote )
+    {
+        this.statevote = stateVote;
     }
 
     @Override
     public String toString()
     {
         return "User{" + "id=" + id + ", email='" + email + '\'' + ", password='" + password + '\'' + ", firstname='"
-            + firstname +  ", username='" + username + '\'' + ", image='" + image + '\'' +'}';
+            + firstname +'}';
     }
 
 
     
 	@ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "USER_EXCHANGES",          
+    @JoinTable(name = "USERVOTE_EXCHANGES",          
             joinColumns =              
-                    @JoinColumn(name="USER_email", referencedColumnName="email"),         
+                    @JoinColumn(name="USERVOTE_email", referencedColumnName="email"),         
             inverseJoinColumns =              
                     @JoinColumn(name="EXCHANGE_id", referencedColumnName="id")
     )      
@@ -234,27 +200,7 @@ public class User {
     }
 
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "USER_EXREQUESTS",          
-            joinColumns =              
-                    @JoinColumn(name="USER_email", referencedColumnName="email"),         
-            inverseJoinColumns =              
-                    @JoinColumn(name="EXREQUESTS_id", referencedColumnName="id")
-    ) 
     
-    public List<Exrequests> getExrequests() {
-        return this.exrequests;
-    }
-
-    public void addNewRequests(Exrequests newRequests) {
-    // aqui se le agrega el id a la solicitud
-        //this.numRequest=this.numRequest+1;
-        //newRequests.setId(this.numRequest);
-        this.exrequests.add(newRequests);
-    }
-
-    public void setExrequests(List<Exrequests> exrequests){
-        this.exrequests=exrequests;
-    }
+    
 
 }

@@ -1,6 +1,6 @@
 package com.eci.cosw.springbootsecureapi.service;
 
-import com.eci.cosw.springbootsecureapi.model.Exrequests;
+
 import com.eci.cosw.springbootsecureapi.model.User;
 import com.eci.cosw.springbootsecureapi.model.Change;
  import com.eci.cosw.springbootsecureapi.repositories.UserRepository;
@@ -32,10 +32,6 @@ public class UserServiceImp implements UserService{
     return usersRepository.save(user);
     }
 
-    @Override
-    public User updateUser(User user, User u) {
-    return usersRepository.updateUser(user.getUsername(),user.getEmail(),user.getPassword(),user.getImage(),u.getId());
-    }
 
     @Override
     public User findUserByEmail(String email) {
@@ -85,24 +81,5 @@ public class UserServiceImp implements UserService{
         this.usersRepository.save(tmp);
         return change;
     }
-
-	@Override
-	public Exrequests addExrequests(Exrequests requests, String email) {
-        System.out.println("--------------------se creo una nueva solicitud-----------------------------------");
-		User tmp = this.findUserByEmail( email );
-        tmp.addNewRequests(requests);
-        this.usersRepository.save(tmp);
-        return requests;
-	}
-
-	@Override
-	public List<Exrequests> getAllExrequests(String email) {
-		return usersRepository.findUserByEmail(email).getExrequests();
-	}
-
-    
-
-    
-
 
 }

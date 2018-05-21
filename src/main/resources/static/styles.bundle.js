@@ -3,7 +3,7 @@ webpackJsonp(["styles"],{
 /***/ "../../../../../src/fondos.jpg":
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "fondos.36e5dad071a69ddfea20.jpg";
+module.exports = __webpack_require__.p + "fondos.461c5ef599a47293867c.jpg";
 
 /***/ }),
 
@@ -42,7 +42,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "#fondo {\n  background-image: url(" + __webpack_require__("../../../../../src/fondos.jpg") + ");\n  background-size: 25%;\n}\n", ""]);
+exports.push([module.i, "#fondo {\n  background-image: url(" + __webpack_require__("../../../../../src/fondos.jpg") + ");\n  background-size: 100%;\n}\n", ""]);
 
 // exports
 

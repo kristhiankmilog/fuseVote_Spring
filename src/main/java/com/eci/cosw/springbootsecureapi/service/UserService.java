@@ -1,13 +1,14 @@
 package com.eci.cosw.springbootsecureapi.service;
-import com.eci.cosw.springbootsecureapi.model.Exrequests;
+
+
 import com.eci.cosw.springbootsecureapi.model.User;
 import com.eci.cosw.springbootsecureapi.model.Change;
 
 import java.util.List;
 
 /**
- * @author Santiago Carrillo
- * 8/21/17.
+ * @author kristhian gomez
+ * 17/5/18.
  */
 public interface UserService
 {
@@ -16,8 +17,6 @@ public interface UserService
     User getUser( long l );
 
     User createUser( User user );
-
-    public User updateUser(User user,User u);
 
     User findUserByEmail( String email );
 
@@ -33,7 +32,5 @@ public interface UserService
 
     Change addChange(Change change,String email);
 
-    Exrequests addExrequests(Exrequests requests,String email);
     
-    List<Exrequests> getAllExrequests(String email);
 }

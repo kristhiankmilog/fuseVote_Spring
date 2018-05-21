@@ -17,7 +17,7 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-@Table(name = "exChange")
+@Table(name = "exChanged")
 public class Change{
 
     private int id;    

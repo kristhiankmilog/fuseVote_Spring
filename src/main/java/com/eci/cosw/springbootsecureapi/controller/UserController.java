@@ -6,7 +6,6 @@ import javax.servlet.ServletException;
 
 import com.eci.cosw.springbootsecureapi.model.User;
 import com.eci.cosw.springbootsecureapi.model.Change;
-import com.eci.cosw.springbootsecureapi.model.Exrequests;
 import com.eci.cosw.springbootsecureapi.service.ServicesException;
 import com.eci.cosw.springbootsecureapi.service.UserService;
 
@@ -34,27 +33,27 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    //@CrossOrigin
+    @CrossOrigin
     @RequestMapping(value = "/items", method = RequestMethod.GET)
     public List<User> getUsers() {
         return userService.getUsers();
     }
 
-    //@CrossOrigin
+    @CrossOrigin
     @RequestMapping(value = "/items", method = RequestMethod.POST)
     public User setTodo(@RequestBody User user) {
         return userService.RegisterUser(user);
 
     }
 
-    //@CrossOrigin
+    @CrossOrigin
     @RequestMapping(value = "/{email}", method = RequestMethod.GET)
 
     public User getUsersByEmail(@PathVariable("email") String email) {
         return userService.findUserByEmail(email);
     }
 
-    //@CrossOrigin
+    @CrossOrigin
     @RequestMapping(value = "/id/{id}", method = RequestMethod.GET)
 
     public User getUsersById(@PathVariable("id") int id) {
@@ -65,18 +64,12 @@ public class UserController {
 
     }
 
-    //@CrossOrigin
+    @CrossOrigin
     @RequestMapping( value = "/", method = RequestMethod.POST )
 
     public User setUsers(@RequestBody User user) throws ServicesException {
-
-        if(user.getUsername()==null || user.getUsername().trim().isEmpty()){
-
-            throw new ServicesException("Please fill in name");
-
-        }
-
-        else if(user.getEmail()==null || user.getEmail().trim().isEmpty()){
+        
+        if(user.getEmail()==null || user.getEmail().trim().isEmpty()){
 
             throw new ServicesException("Please fill in email");
 
@@ -103,27 +96,8 @@ public class UserController {
 
     }
 
-    //@CrossOrigin
-    @RequestMapping(value = "/updateprofile/{id}", method = RequestMethod.POST)
-
-    public User updateUser(@RequestBody User updateuser, @PathVariable("id") int id) throws ServicesException {
-
-        User u = userService.findUserById(id);
-
-        if (!updateuser.getEmail().trim().equals(u.getEmail())
-                && userService.findUserByEmail(updateuser.getEmail()) != null) {
-
-            throw new ServicesException("Email alredy registered. Please try again.");
-
-        } else {
-
-            return userService.updateUser(updateuser, u);
-
-        }
-
-    }
-
-    //@CrossOrigin
+       
+    @CrossOrigin
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public Token login(@RequestBody User login) throws ServletException {
 
@@ -135,6 +109,7 @@ public class UserController {
         }
 
         String username = login.getEmail();
+
         String password = login.getPassword();
 
         User user = userService.findUserByEmailAndPassword(username, password);
@@ -173,37 +148,19 @@ public class UserController {
     }
 
 
-    //@CrossOrigin
+    @CrossOrigin
     @RequestMapping( value = "/changes/{email}", method = RequestMethod.GET )
     public List<Change> getChangeList(@PathVariable(name = "email") String email){
         return userService.getChangeList(email);
     }
 
-    //@CrossOrigin
+    @CrossOrigin
     @RequestMapping( value = "/changes/{email}", method = RequestMethod.POST )
     public Change setChange(@RequestBody Change change, @PathVariable(name = "email") String email){
         return userService.addChange(change,email);
     }
 
-    //@CrossOrigin
-    @RequestMapping( value = "/exchanges/{email}", method = RequestMethod.GET )
-    public List<Change> getAllChanges(@PathVariable(name = "email") String email){
-        return userService.getAllChanges(email);
-    }
-
-    //@CrossOrigin
-    @RequestMapping( value = "/exrequests/{email}", method = RequestMethod.GET )
-    public List<Exrequests> getAllExrequests(@PathVariable(name = "email") String email){
-        System.out.println("----------------------hace solicitud----------------------");
-        return userService.getAllExrequests(email);
-    }
-
-    //@CrossOrigin
-    @RequestMapping( value = "/exrequests/{email}", method = RequestMethod.POST )
-    public Exrequests setExrecuest(@RequestBody Exrequests requestis, @PathVariable(name = "email") String email){
-        System.out.println("----------------------hace solicitud****************************");
-        return userService.addExrequests(requestis,email);
-    }
+    
 
 
 }
